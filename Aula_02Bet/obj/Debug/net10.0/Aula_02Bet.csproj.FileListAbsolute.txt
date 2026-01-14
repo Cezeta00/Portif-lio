@@ -1,0 +1,14 @@
+C:\Users\Isaac\estudando_Dev\Aulas-Kaio\Aula_02Bet\bin\Debug\net10.0\Aula_02Bet.exe
+C:\Users\Isaac\estudando_Dev\Aulas-Kaio\Aula_02Bet\bin\Debug\net10.0\Aula_02Bet.deps.json
+C:\Users\Isaac\estudando_Dev\Aulas-Kaio\Aula_02Bet\bin\Debug\net10.0\Aula_02Bet.runtimeconfig.json
+C:\Users\Isaac\estudando_Dev\Aulas-Kaio\Aula_02Bet\bin\Debug\net10.0\Aula_02Bet.dll
+C:\Users\Isaac\estudando_Dev\Aulas-Kaio\Aula_02Bet\bin\Debug\net10.0\Aula_02Bet.pdb
+C:\Users\Isaac\estudando_Dev\Aulas-Kaio\Aula_02Bet\obj\Debug\net10.0\Aula_02Bet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Isaac\estudando_Dev\Aulas-Kaio\Aula_02Bet\obj\Debug\net10.0\Aula_02Bet.AssemblyInfoInputs.cache
+C:\Users\Isaac\estudando_Dev\Aulas-Kaio\Aula_02Bet\obj\Debug\net10.0\Aula_02Bet.AssemblyInfo.cs
+C:\Users\Isaac\estudando_Dev\Aulas-Kaio\Aula_02Bet\obj\Debug\net10.0\Aula_02Bet.csproj.CoreCompileInputs.cache
+C:\Users\Isaac\estudando_Dev\Aulas-Kaio\Aula_02Bet\obj\Debug\net10.0\Aula_02Bet.dll
+C:\Users\Isaac\estudando_Dev\Aulas-Kaio\Aula_02Bet\obj\Debug\net10.0\refint\Aula_02Bet.dll
+C:\Users\Isaac\estudando_Dev\Aulas-Kaio\Aula_02Bet\obj\Debug\net10.0\Aula_02Bet.pdb
+C:\Users\Isaac\estudando_Dev\Aulas-Kaio\Aula_02Bet\obj\Debug\net10.0\Aula_02Bet.genruntimeconfig.cache
+C:\Users\Isaac\estudando_Dev\Aulas-Kaio\Aula_02Bet\obj\Debug\net10.0\ref\Aula_02Bet.dll
