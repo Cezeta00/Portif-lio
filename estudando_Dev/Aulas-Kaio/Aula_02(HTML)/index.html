@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <title>Aula 02</title>
+  </head>
+
+  <body style="background-color: hsl(0 0% 98%)">
+    <header class="mb-4">
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">
+            <img
+              src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
+              alt=""
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            Biblioteca
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-fluid">
+      <div
+        class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4"
+      >
+        <div class="ms-5">
+          <h1 class="text-2xl font-bold text-foreground">
+            Biblioteca do Kaioba
+          </h1>
+          <p class="text-muted-foreground">Aluguel e compra de livros</p>
+        </div>
+        <div class="d-flex gap-2 me-5">
+          <button class="btn btn-primary">
+            <i class="bi bi-plus-lg me-1"></i>Novo
+          </button>
+          <button class="btn btn-outline-secondary">
+            <i class="bi bi-arrow-repeat me-1"></i>Atualizar
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <div class="card shadow-sm" type="button">
+            <div class="card-body">
+              <div class="text-muted">Total</div>
+              <div class="fs-4 fw-semibold">R$5.000,00</div>
+              <small class="text-success"
+                ><i class="bi bi-caret-up-fill"></i> 12% de juros
+                acumulado</small
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card shadow-sm" type="button">
+            <div class="card-body">
+              <div class="text-muted">Alugado</div>
+              <div class="fs-4 fw-semibold">R$2.000,00</div>
+              <small><i class="bi bi-caret-up-fill"></i>18% Despesas</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card shadow-sm" type="button">
+            <div class="card-body">
+              <div class="text-muted">Despesas</div>
+              <div class="fs-4 fw-semibold">R$2.000,00</div>
+              <small class="text-danger"
+                ><i class="bi bi-caret-up-fill"></i>18% Despesas</small
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card shadow-sm" type="button">
+            <div class="card-body">
+              <div class="text-muted">Livros</div>
+              <div class="fs-4 fw-semibold">Total: 5.000</div>
+              <small><i class="bi bi-caret-up-fill"></i>18% Despesas</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-responsive p-5">
+        <table
+          class="table table-striped-columns table-bordered border-primary"
+        >
+          <thead class="table-dark">
+            <tr>
+              <th scope="col"><h1 class="text-center fs-4">ID</h1></th>
+              <th scope="col"><h1 class="text-center fs-4">CAPA</h1></th>
+              <th scope="col"><h1 class="text-center fs-4">NOME</h1></th>
+              <th scope="col"><h1 class="text-center fs-4">AUTOR</h1></th>
+              <th scope="col"><h1 class="text-center fs-4">LANÇAMENTO</h1></th>
+              <th scope="col"><h1 class="text-center fs-4">GÊNERO</h1></th>
+              <th scope="col"><h1 class="text-center fs-4">SINOPSE</h1></th>
+              <th scope="col"><h1 class="text-center fs-4">STATUS</h1></th>
+              <th scope="col"><h1 class="text-center fs-4">SEMANAL</h1></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--PequenoPrincipe-->
+            <tr>
+              <th scope="row" style="width: 10px" class="align-middle">
+                <h1 class="text-center">1</h1>
+              </th>
+              <td style="width: 9rem">
+                <div class="d-flex align-items-center" style="width: 8rem">
+                  <a href="img/PequenoPrincipe.jpg">
+                    <img
+                      src="img/PequenoPrincipe.jpg"
+                      class="img-thumbnail"
+                      alt="PequenoPrincipe"
+                  /></a>
+                </div>
+              </td>
+              <td
+                class="align-middle text-decoration-underline"
+                style="width: 10rem"
+              >
+                <div class="text-center">
+                  <a
+                    href="https://www.amazon.com.br/Pequeno-Pr%C3%ADncipe-almofadada-aquarelas-originais/dp/6559801365/ref=sr_1_3?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1RGZH0F73C7TK&dib=eyJ2IjoiMSJ9.AFQ5mt022waqVrFXatnMDNzz9o-3bDV_nv7kSCRVc0mTufZ2uEXTDnwYfkOksAtn2FtfgKo47pBNcFhVCxT7DkY8SNfvYM0HIOVETQ9Caswm4LTcK4okfajPRdsxKTQ-Alc6Til1qwbjsakzDHTfJd2qifOSWbXSgn5GgWj-UdE__MBYgCkWqv1hFgnoV_acOgCDHbUo_Ply8lKK0-HcHRX7O25h1SudDxET_9wrA2aDzDK6mcgP_b2L2XeWAEvVTPRhq-bDUE4BTf_anHwgieTrx657sc5-YoPnBHz60Fo.kPPvP061j7RH59ty4Su8l4rYVNCeNfgDJH996ecRYUQ&dib_tag=se&keywords=pequeno+principe&qid=1770054326&sprefix=pequeno+principe%2Cdigital-text%2C226&sr=8-3"
+                    ><h4>O Pequeno Principe</h4></a
+                  >
+                </div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h3>Antoine de Saint-Exupéry</h3></div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h3>Abril de 1943</h3></div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h4>Fabula / Infanto-Juvenil</h4></div>
+              </td>
+              <td class="align-middle" style="width: 30rem">
+                <p>
+                  O Pequeno Príncipe narra o encontro de um piloto perdido no
+                  deserto do Saara com um menino vindo de outro planeta (o
+                  asteroide B-612), que compartilha suas viagens por outros
+                  asteroides e ensina sobre a importância da amizade, amor e das
+                  coisas simples da vida, criticando a falta de imaginação e as
+                  prioridades dos adultos, com a célebre lição da raposa: "Tu te
+                  tornas eternamente responsável por aquilo que cativas".
+                </p>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="alert alert-danger text-center" role="alert">
+                  <h3>⚠️Indisponivel</h3>
+                </div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center">
+                  <h1 class="text-decoration-line-through">R$ 3,25</h1>
+                </div>
+              </td>
+            </tr>
+            <!--OsMiseraveis-->
+            <tr>
+              <th scope="row" style="width: 10px" class="align-middle">
+                <h1 class="text-center">2</h1>
+              </th>
+              <td style="width: 9rem">
+                <div class="d-flex align-items-center" style="width: 8rem">
+                  <a href="img/OsMiseraveis.jpg">
+                    <img
+                      src="img/OsMiseraveis.jpg"
+                      class="img-thumbnail"
+                      alt="OsMiseraveis"
+                  /></a>
+                </div>
+              </td>
+              <td
+                class="align-middle text-decoration-underline"
+                style="width: 10rem"
+              >
+                <div class="text-center">
+                  <a
+                    href="https://www.amazon.com.br/Os-Miser%C3%A1veis-S%C3%A9rie-Cl%C3%A1ssicos-Universais/dp/8516079732/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=28L1CK5YB5K58&dib=eyJ2IjoiMSJ9.j_77EcVCpzLB2l0wmBv78D_NuFuo-yPJnF6pbXId7VgH8C5aCFXlpYiRn0qDhRdn16-ltQX8c37uJwjk77R89XFgSzT9nDq9qiJR7T14AyLQph6wY6LktIjKQ5lnR-V1O5N-vMKf8tP6J9EwRb4XUyuw4DPWpiR1Z6DCn00jS-GdEhF46cB4cc1iDmBFuFgIW1ePfOUJV7g_wriwo6m15XBSgOWGUQBdmbgfqt8t9bg.D_vlB2vtyGIixiCFSZzlrKJFbq4mpwWahDKm3pgpoOw&dib_tag=se&keywords=Os+miser%C3%A1veis&qid=1770055807&s=books&sprefix=os+miser%C3%A1veis%2Cstripbooks%2C199&sr=1-1"
+                    ><h4>Os Miseraveis</h4></a
+                  >
+                </div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h3>Victor Hugo</h3></div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h3>Março de 1862</h3></div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h4>Drama / Romance</h4></div>
+              </td>
+              <td class="align-middle" style="width: 30rem">
+                <p>
+                  "Os Miseráveis", narra a redenção de Jean Valjean, um
+                  ex-prisioneiro condenado a 19 anos por roubar um pão, na
+                  França do século XIX. Após transformar sua vida com ajuda de
+                  um bispo, ele é perseguido pelo inspetor Javert, enquanto
+                  cuida de Cosette, filha da falecida Fantine, em meio à
+                  instabilidade política.
+                </p>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="alert alert-success text-center" role="alert">
+                  <h3>✅Disponivel</h3>
+                </div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center">
+                  <h1 class="text-success">R$ 15,00</h1>
+                </div>
+              </td>
+            </tr>
+            <!--DomQuixote-->
+            <tr>
+              <th scope="row" style="width: 10px" class="align-middle">
+                <h1 class="text-center">3</h1>
+              </th>
+              <td style="width: 9rem">
+                <div class="d-flex align-items-center" style="width: 8rem">
+                  <a href="img/DomQuixote.jpg">
+                    <img
+                      src="img/DomQuixote.jpg"
+                      class="img-thumbnail"
+                      alt="DomQuixote"
+                  /></a>
+                </div>
+              </td>
+              <td
+                class="align-middle text-decoration-underline"
+                style="width: 10rem"
+              >
+                <div class="text-center">
+                  <a
+                    href="https://www.amazon.com.br/Dom-Quixote-Cl%C3%A1ssicos-Literatura-Quadrinhos/dp/8525433632/ref=sr_1_22?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=DMEWK6ZWKP9Z&dib=eyJ2IjoiMSJ9.1l3_nuieOb-y6NTWM6IuE-zvh3hiNYFSRmNitEC8t_2Qlsd19HgxOS1byZg8tuslMrtiuEN41Et9OaccXcDeLj8JoN_kcib_p-fsDPeXtLYQqOD3gLOXsLokKMmlagqYLgTvDoTW1ydSXqIlrH-x086GJEa0sMIA8cFhvXS5rppcJJ2Eblm6w5U2fGspE5ipF4bxFobn54F5ByUJUlVFniR5s2tYUeezpNp7FehXJdnUfhkqExmAFKO0TPtdn8KeDFlG3D-CI9jvtZ_mOBKIzah6B6ypinOXeWfPppAJ7QA.tuPX8eSMav3LjWGg3mD0E7h6mRUAVshlpNyPRiDwaD8&dib_tag=se&keywords=Dom+Quixote&qid=1770056330&sprefix=dom+quixote%2Cdigital-text%2C197&sr=8-22"
+                    ><h4>Dom Quixote</h4></a
+                  >
+                </div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h3>Miguel Cervantes</h3></div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h3>Janeiro de 1605</h3></div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h4>Romance / Satira</h4></div>
+              </td>
+              <td class="align-middle" style="width: 30rem">
+                <p>
+                  Dom Quixote, conta a história de um fidalgo espanhol que, após
+                  ler muitos livros de cavalaria, enlouquece e decide se tornar
+                  um cavaleiro andante para lutar por justiça e pela honra de
+                  sua amada imaginária, Dulcineia del Toboso, acompanhado pelo
+                  realista escudeiro Sancho Pança, confundindo realidade e
+                  fantasia em aventuras cômicas e trágicas que satirizam os
+                  ideais medievais até sua melancólica morte lúcida, sendo
+                  considerado o primeiro romance moderno.
+                </p>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="alert alert-success text-center" role="alert">
+                  <h3>✅Disponivel</h3>
+                </div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center">
+                  <h1 class="text-success">R$ 12,25</h1>
+                </div>
+              </td>
+            </tr>
+            <!--1984-->
+            <tr>
+              <th scope="row" style="width: 10px" class="align-middle">
+                <h1 class="text-center">4</h1>
+              </th>
+              <td style="width: 9rem">
+                <div class="d-flex align-items-center" style="width: 8rem">
+                  <a href="img/1984.jpg">
+                    <img src="img/1984.jpg" class="img-thumbnail" alt="1984"
+                  /></a>
+                </div>
+              </td>
+              <td
+                class="align-middle text-decoration-underline"
+                style="width: 10rem"
+              >
+                <div class="text-center">
+                  <a
+                    href="https://www.amazon.com.br/1984-George-Orwell/dp/8535914846/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=ZSS2JJZYVX6I&dib=eyJ2IjoiMSJ9.YmAQI_v2aNNn_GqixoPw_QKNypRGALSq_ym84OpErZeZa-9z-FrjgXFUpFWSv8VZORCyCfVviNNsIAIR_hEvXGHga-51L5E-jztYayk9QkmxYEfX0ptnLW7RVl2Gz_cJTGuhJ9HsYPVl5bdA5HHSrFAPLmYSyP7caCxHeR5Iyzkc2evb9Jl8uq5IBDdCk3wiebEyvL_kTYu214rOwNEhvSSPTGOfDJWsE63NBHHIId4.x4T8wZhkLoYt8idTZNP_6DCM6NpuNv9GR8WM6jK-6JE&dib_tag=se&keywords=1984&qid=1770056845&s=books&sprefix=1984%2Cstripbooks%2C199&sr=1-1"
+                    ><h4>1984</h4></a
+                  >
+                </div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h3>George Orwell</h3></div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h3>Junho de 1949</h3></div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h4>Distopia / Politica</h4></div>
+              </td>
+              <td class="align-middle" style="width: 30rem">
+                <p>
+                  1984, é uma distopia clássica sobre um regime totalitário que
+                  controla a sociedade através de vigilância constante (o Grande
+                  Irmão), manipulação da verdade e repressão do pensamento
+                  individual. O protagonista, Winston Smith, trabalha no
+                  "Ministério da Verdade" alterando documentos, mas rebela-se
+                  secretamente contra o Partido
+                </p>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="alert alert-danger text-center" role="alert">
+                  <h3>⚠️Indisponivel</h3>
+                </div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center">
+                  <h1 class="text-decoration-line-through">R$ 5,50</h1>
+                </div>
+              </td>
+            </tr>
+            <!--O Anticristo-->
+            <tr>
+              <th scope="row" style="width: 10px" class="align-middle">
+                <h1 class="text-center">5</h1>
+              </th>
+              <td style="width: 9rem">
+                <div class="d-flex align-items-center" style="width: 8rem">
+                  <a href="img/oAnticristo.jpg">
+                    <img
+                      src="img/oAnticristo.jpg"
+                      class="img-thumbnail"
+                      alt="oAnticristo"
+                  /></a>
+                </div>
+              </td>
+              <td
+                class="align-middle text-decoration-underline"
+                style="width: 10rem"
+              >
+                <div class="text-center">
+                  <a
+                    href="https://www.amazon.com.br/anticristo-721-Friedrich-Nietzsche/dp/8525417912/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2QPJJ44RW1CX6&dib=eyJ2IjoiMSJ9.1gVn_gusugshJAv7e10TdoUk0Z7jAJ-_JT7PXMNMKT_qrYqNf6uWL1dNxXAInRCrlpJMjRRbL5zkQruma1stkYA3oxmgPD1eo9432aebPnjlQoPGkW3HZDThV_kB6alofYpdptNHAAv9LXSc2jb9hjaHdpbln1pEewsEHKUuW9r7b4Quym83b18Ap_WUXTsILrx3es5hD5qoLK4ySG7AtA6RPXVjWNLzfh8kPgg_pf8.Ab4CNevE4prG7aOR85EEmNk6GDwHzo8JGWaLY3CGvlA&dib_tag=se&keywords=O+Anticristo&qid=1770057586&s=books&sprefix=o+anticristo%2Cstripbooks%2C212&sr=1-1"
+                    ><h4>O Anticristo</h4></a
+                  >
+                </div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h3>Friedrich Nietzsche</h3></div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h3>1895</h3></div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center">
+                  <h4>Critica / Filosofia</h4>
+                </div>
+              </td>
+              <td class="align-middle" style="width: 30rem">
+                <p>
+                  "O Anticristo", é uma crítica feroz e radical ao cristianismo,
+                  considerado pelo autor como uma "maldição" e a maior corrupção
+                  moral da história. Nietzsche argumenta que a religião cristã
+                  inverte os valores, negando a vida, a força e o prazer em prol
+                  de um além-vida, promovendo uma "moral de escravos" que
+                  enfraquece a humanidad
+                </p>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="alert alert-danger text-center" role="alert">
+                  <h3>⚠️Indisponivel</h3>
+                </div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center">
+                  <h1 class="text-decoration-line-through">R$ 5,50</h1>
+                </div>
+              </td>
+            </tr>
+            <!--o Menino Maluquinho-->
+            <tr>
+              <th scope="row" style="width: 10px" class="align-middle">
+                <h1 class="text-center">5</h1>
+              </th>
+              <td style="width: 9rem">
+                <div class="d-flex align-items-center" style="width: 8rem">
+                  <a href="img/oMeninoMaluquinhojpg.jpg">
+                    <img
+                      src="img/oMeninoMaluquinhojpg.jpg"
+                      class="img-thumbnail"
+                      alt="oMeninoMaluquinho"
+                  /></a>
+                </div>
+              </td>
+              <td
+                class="align-middle text-decoration-underline"
+                style="width: 10rem"
+              >
+                <div class="text-center">
+                  <a
+                    href="https://www.amazon.com.br/Menino-Maluquinho-Ziraldo/dp/6555395656/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=XNR24E7EDH7G&dib=eyJ2IjoiMSJ9.a54jSiIFGtmcxKi28wFCtrvHKM7y2Gby8Sa13PnCcDquh4Z-Ge0kF-ajAWwyT67bf-EFXto1FAh47OFQzprJpJ_InfVATiE75Pux36oPXYasnNVrAPAGPOr6JYpdjTGnjUFdwZ-915m6l2ddM7XwGb_fyXCqpxy3lq7okbf2Nq0yz55hW498bHnOnEx08YVRvSh-wXHJkaB7o6pDsxqdUXCmEm8N8ieCUguwUu9LcOU.BzoK6Ejk-YUzeKHeEyRfCW_0sFWR2zmw6iGGQCEPqME&dib_tag=se&keywords=O+Menino+Maluquinho&qid=1770058415&s=books&sprefix=o+menino+maluquinho%2Cstripbooks%2C215&sr=1-1"
+                    ><h4>o Menino Maluquinho</h4></a
+                  >
+                </div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h3>Ziraldo</h3></div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h3>Outubro 1980</h3></div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center">
+                  <h4>Ficção / Infanto-Juvenil</h4>
+                </div>
+              </td>
+              <td class="align-middle" style="width: 30rem">
+                <p>
+                  O Menino Maluquinho, conta a história de um menino travesso,
+                  criativo e alegre que usa uma panela na cabeça, apronta mil
+                  confusões com os amigos, é ótimo em fazer versos e soltar
+                  pipas, mas tira notas altas na escola (exceto em
+                  comportamento). As aventuras focam na alegria da infância,
+                  amizade e imaginação, mostrando-o como líder de suas
+                  brincadeiras, goleiro de futebol e um garoto que, apesar das
+                  travessuras, era amado e feliz, tornando-se um adulto legal. A
+                  obra explora a dinâmica familiar, as pequenas alegrias e
+                  desafios da infância, com um toque de nostalgia e lições sobre
+                  amor e afeto.
+                </p>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="alert alert-success text-center" role="alert">
+                  <h3>✅Disponivel</h3>
+                </div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center">
+                  <h1 class="text-success">R$ 7,00</h1>
+                </div>
+              </td>
+            </tr>
+            <!--Admiravel Mundo Novo-->
+            <tr>
+              <th scope="row" style="width: 10px" class="align-middle">
+                <h1 class="text-center">6</h1>
+              </th>
+              <td style="width: 9rem">
+                <div class="d-flex align-items-center" style="width: 8rem">
+                  <a href="img/AdmiravelMundoNovo.jpg">
+                    <img
+                      src="img/AdmiravelMundoNovo.jpg"
+                      class="img-thumbnail"
+                      alt="AdmiravelMundoNovo"
+                  /></a>
+                </div>
+              </td>
+              <td
+                class="align-middle text-decoration-underline"
+                style="width: 10rem"
+              >
+                <div class="text-center">
+                  <a
+                    href="https://www.amazon.com.br/Admir%C3%A1vel-mundo-Aldous-Leonard-Huxley/dp/8525056006/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=HAJ2BM5U9UAD&dib=eyJ2IjoiMSJ9.QtELaFMNwxFlTOdB78TVO8s9iPBsmrvc7WRjS9Z53ah2bcueFJURj8LpgPBwbhdQNDQ6mKKMYXHmdOsP4A1famJjjCjFwtQT9S5WI3JAxeAp-SmGEevTYef0f8Jb_l4sfs-cExt7LcK6JprV6g0HQFeI2hkmehGQ9XAazlwavecDplqEIs9ORGdeR9PxEyyckWo5_tOu6ndGF8z8e2gz2QTWFD1BceQSrAiPGcRufKU.Cs67IzNadw-K3T6RCNS9mK3Sw5MkUQ6KQ94p4jopmiA&dib_tag=se&keywords=Admir%C3%A1vel+mundo+novo&qid=1770059004&s=books&sprefix=admir%C3%A1vel+mundo+novo%2Cstripbooks%2C190&sr=1-1"
+                    ><h4>Admiravel Mundo Novo</h4></a
+                  >
+                </div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h3>Aldous Huxley</h3></div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h3>Fevereiro 1932</h3></div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center">
+                  <h4>Distopia / Ficção</h4>
+                </div>
+              </td>
+              <td class="align-middle" style="width: 30rem">
+                <p>
+                  "Admirável Mundo Novo" (1932), de Aldous Huxley, é uma
+                  distopia clássica que retrata uma sociedade futura organizada
+                  por castas, condicionamento psicológico e reprodução
+                  artificial, onde a tecnologia substitui a individualidade e a
+                  liberdade. A felicidade é imposta pelo uso de drogas ("soma"),
+                  eliminando dor e afeto, criando um mundo alienado e
+                  autoritário sob o lema "Comunidade, Identidade, Estabilidade"
+                </p>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="alert alert-success text-center" role="alert">
+                  <h3>✅Disponivel</h3>
+                </div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center">
+                  <h1 class="text-success">R$ 11,50</h1>
+                </div>
+              </td>
+            </tr>
+            <!--Irmãos karamazov-->
+            <tr>
+              <th scope="row" style="width: 10px" class="align-middle">
+                <h1 class="text-center">7</h1>
+              </th>
+              <td style="width: 9rem">
+                <div class="d-flex align-items-center" style="width: 8rem">
+                  <a href="img/Irmãoskaramazov.jpg">
+                    <img
+                      src="img/Irmãoskaramazov.jpg"
+                      class="img-thumbnail"
+                      alt="Irmãoskaramazov"
+                  /></a>
+                </div>
+              </td>
+              <td
+                class="align-middle text-decoration-underline"
+                style="width: 10rem"
+              >
+                <div class="text-center">
+                  <a
+                    href="https://www.amazon.com.br/Os-Irm%C3%A3os-Karamazov-Fiodor-Dostoievski/dp/8573265388/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2OXKLHDUNWA2N&dib=eyJ2IjoiMSJ9.WiP6nRFMh_dXQVXSo2oPlOyjDOvL-ZPgCDwIC5gYdiHMt6mH1d5dMgXlHbLuQspOmp1IcyWn7DZPn-TpKJbkTOjkIl908EcAVCPatB-K5WyVzmtK_PWcAE3ufRt4ORXX-QbGTiOhT5KHB5t-RUG_hunUiA5drgVEZ6KraYOH6jSAxF9e6UbTZCeEWz_TUzHPbNkLh1XBvLGWaSQpBI9TLAafSCj98j-U90lsDgkaAbY.srMmu_Atk4EcwVDB8MUvI-XcjM9QeCgh9j_zLIntenA&dib_tag=se&keywords=Os+irm%C3%A3os+Karam%C3%A1zov&qid=1770059499&s=books&sprefix=os+irm%C3%A3os+karam%C3%A1zov%2Cstripbooks%2C229&sr=1-1&ufe=app_do%3Aamzn1.fos.6121c6c4-c969-43ae-92f7-cc248fc6181d"
+                    ><h4>Os Irmãos Karamazov</h4></a
+                  >
+                </div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h3>Fiodor Dostoiévski</h3></div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h3>Novembro 1880</h3></div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center">
+                  <h4>Filosofia / Romance</h4>
+                </div>
+              </td>
+              <td class="align-middle" style="width: 30rem">
+                <p>
+                  "Os Irmãos Karamazov", é um romance filosófico e policial que
+                  gira em torno do parricídio de Fiódor, um pai devasso, e a
+                  suspeita sobre seus três filhos, representantes de diferentes
+                  visões de mundo: o impulsivo Dmitri, o intelectual ateu Ivan e
+                  o místico Aliocha. A trama explora conflitos profundos sobre
+                  moralidade, fé, razão e culpa.
+                </p>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="alert alert-success text-center" role="alert">
+                  <h3>✅Disponivel</h3>
+                </div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center">
+                  <h1 class="text-success">R$ 27,50</h1>
+                </div>
+              </td>
+            </tr>
+            <!--Thomas Nelson-->
+            <tr>
+              <th scope="row" style="width: 10px" class="align-middle">
+                <h1 class="text-center">8</h1>
+              </th>
+              <td style="width: 9rem">
+                <div class="d-flex align-items-center" style="width: 8rem">
+                  <a href="img/ThomasNelson.jpg">
+                    <img
+                      src="img/ThomasNelson.jpg"
+                      class="img-thumbnail"
+                      alt="ThomasNelson"
+                  /></a>
+                </div>
+              </td>
+              <td
+                class="align-middle text-decoration-underline"
+                style="width: 10rem"
+              >
+                <div class="text-center">
+                  <a
+                    href="https://www.amazon.com.br/B%C3%ADblia-Estudo-Thomas-Nelson-Capa/dp/6556895202/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=GEKOPEM75XHM&dib=eyJ2IjoiMSJ9.oN_wGUPOgPr2spE6UzuLWqkVSrSMkVoUQLPvd3aViGBeHw7162HOROiwmzTuKvsoJHuTICWqW-_N0R9gwK9ax3sdfmYjZ6x_l8mOaNYfMY6HPp6-96odHKvkOv_6-SU5h87t54KuPaGy75zkRl7Lzapd0EvAdPRMxE5j78AnRpvWMAaJOUrIkLXDMaOymcY81RhPNXBdTYb4Wz-FCr8Zd0Qdh9sM2l-Z7Ea2LBc5qgs.m6K4qvM6gorCBvEkN2rNfAVDuX_y2FiJK6rL0P0GpnI&dib_tag=se&keywords=B%C3%ADblia+de+estudo+Thomas+Nelson%2C+NVI%2C+capa+dura+verde%2C+Leitura+Perfeita+%7C+B%C3%ADblia+com+mais+de+50+mil+recursos&qid=1770061205&s=books&sprefix=b%C3%ADblia+de+estudo+thomas+nelson+nvi+capa+dura+verde+leitura+perfeita+b%C3%ADblia+com+mais+de+50+mil+recursos%2Cstripbooks%2C193&sr=1-1&ufe=app_do%3Aamzn1.fos.fcd6d665-32ba-4479-9f21-b774e276a678"
+                    ><h4>Biblia de Estudos Thomas Nelson</h4></a
+                  >
+                </div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h3>Donald Arthur Carson</h3></div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center"><h3>Janeiro 2023</h3></div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center">
+                  <h4>Religião / tecnologia</h4>
+                </div>
+              </td>
+              <td class="align-middle" style="width: 30rem">
+                <p>
+                  A Bíblia de Estudo Thomas Nelson (NVI) é uma obra de
+                  referência focada na teologia bíblica e na história da
+                  salvação. Comentada por especialistas renomados, oferece mais
+                  de 50.000 recursos, incluindo 28 artigos teológicos, notas de
+                  estudo, fotos coloridas, mapas e gráficos, facilitando a
+                  compreensão da narrativa bíblica completa.
+                </p>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="alert alert-success text-center" role="alert">
+                  <h3>✅Disponivel</h3>
+                </div>
+              </td>
+              <td class="align-middle" style="width: 12rem">
+                <div class="text-center">
+                  <h1 class="text-success">R$ 59,75</h1>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <!-- Bootstrap JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
