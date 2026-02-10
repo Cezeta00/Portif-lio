@@ -49,6 +49,179 @@
           <button class="btn btn-outline-secondary">
             <i class="bi bi-arrow-repeat me-1"></i>Atualizar
           </button>
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-outline-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Buscar
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    <img
+                      src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
+                      alt=""
+                      width="30"
+                      height="24"
+                      class="d-inline-block align-text-top"
+                    />
+                    Biblioteca do Kaioba
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" d="inputGroup-sizing-default"
+                      >NOME</span
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-default"
+                    />
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" d="inputGroup-sizing-default"
+                      >AUTOR</span
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-default"
+                    />
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" d="inputGroup-sizing-default"
+                      >DATA</span
+                    >
+                    <input
+                      type="date"
+                      class="form-control"
+                      aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-default"
+                    />
+                  </div>
+                  <!--dropdown genero-->
+                  <div class="input-group mx-auto p-2" style="width: 200px">
+                    <div class="dropdown-center">
+                      <select
+                        name=""
+                        id=""
+                        class="form-control text-outline-primary ms-3"
+                      >
+                        <option value="0">Selecione uma opção</option>
+                        <option value="1">Critica</option>
+                        <option value="2">Distopia</option>
+                        <option value="3">Drama</option>
+                        <option value="4">Fabula</option>
+                        <option value="5">Ficção</option>
+                        <option value="6">Filosofia</option>
+                        <option value="7">Infanto-Juvenil</option>
+                        <option value="8">Politica</option>
+                        <option value="9">Religião</option>
+                        <option value="10">Romance</option>
+                        <option value="11">Satira</option>
+                        <option value="12">Teologia</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!--Status-->
+                  <div class="input-group mb-3">
+                    <span
+                      class="input-group-text text-bg-primary"
+                      d="inputGroup-sizing-default"
+                      >STATUS</span
+                    >
+                    <div class="ms-1">
+                      <input
+                        type="checkbox"
+                        class="btn-check"
+                        name="btnradio"
+                        id="btnradio2"
+                        autocomplete="off"
+                      />
+                      <label class="btn btn-outline-success" for="btnradio2"
+                        >✅Disponivel</label
+                      >
+                      <input
+                        type="checkbox"
+                        class="btn-check"
+                        name="btnradio"
+                        id="btnradio1"
+                        autocomplete="off"
+                        checked
+                      />
+                      <label class="btn btn-outline-danger" for="btnradio1"
+                        >⚠️Indisponivel</label
+                      >
+                    </div>
+                  </div>
+                  <!--valor maximo -->
+                  <div class="input-group mb-3">
+                    <label for="range4" class="form-label">VALOR MAX</label>
+
+                    <input
+                      type="range"
+                      class="form-range"
+                      min="0"
+                      max="100"
+                      value="50"
+                      id="range4"
+                    />
+                    <output
+                      for="range4"
+                      id="rangeValue"
+                      aria-hidden="true"
+                    ></output>
+
+                    <script>
+                      // This is an example script, please modify as needed
+                      const rangeInput = document.getElementById("range4");
+                      const rangeOutput = document.getElementById("rangeValue");
+
+                      // Set initial value
+                      rangeOutput.textContent = rangeInput.value;
+
+                      rangeInput.addEventListener("input", function () {
+                        rangeOutput.textContent = this.value;
+                      });
+                    </script>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Voltar
+                  </button>
+                  <button type="button" class="btn btn-primary">Buscar</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -610,7 +783,7 @@
               </td>
               <td class="align-middle" style="width: 12rem">
                 <div class="text-center">
-                  <h4>Religião / tecnologia</h4>
+                  <h4>Religião / Teologia</h4>
                 </div>
               </td>
               <td class="align-middle" style="width: 30rem">
