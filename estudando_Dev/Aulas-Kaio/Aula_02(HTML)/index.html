@@ -88,6 +88,7 @@
                   ></button>
                 </div>
                 <div class="modal-body">
+                  <!--nome-->
                   <div class="input-group mb-3">
                     <span class="input-group-text" d="inputGroup-sizing-default"
                       >NOME</span
@@ -97,9 +98,10 @@
                       class="form-control"
                       aria-label="Sizing example input"
                       aria-describedby="inputGroup-sizing-default"
+                      id="nome"
                     />
                   </div>
-
+                  <!--autor-->
                   <div class="input-group mb-3">
                     <span class="input-group-text" d="inputGroup-sizing-default"
                       >AUTOR</span
@@ -109,8 +111,10 @@
                       class="form-control"
                       aria-label="Sizing example input"
                       aria-describedby="inputGroup-sizing-default"
+                      id="autor"
                     />
                   </div>
+                  <!--data-->
                   <div class="input-group mb-3">
                     <span class="input-group-text" d="inputGroup-sizing-default"
                       >DATA</span
@@ -120,17 +124,18 @@
                       class="form-control"
                       aria-label="Sizing example input"
                       aria-describedby="inputGroup-sizing-default"
+                      id="data"
                     />
                   </div>
                   <!--dropdown genero-->
                   <div class="input-group mx-auto p-2" style="width: 200px">
                     <div class="dropdown-center">
                       <select
-                        name=""
-                        id=""
+                        name="genero"
+                        id="genero"
                         class="form-control text-outline-primary ms-3"
                       >
-                        <option value="0">Selecione uma opção</option>
+                        <option value="0">Genero</option>
                         <option value="1">Critica</option>
                         <option value="2">Distopia</option>
                         <option value="3">Drama</option>
@@ -146,7 +151,31 @@
                       </select>
                     </div>
                   </div>
-                  <!--Status-->
+                  <!--dropdown genero2-->
+                  <div class="input-group mx-auto p-2" style="width: 200px">
+                    <div class="dropdown-center">
+                      <select
+                        name="genero2"
+                        id="genero2"
+                        class="form-control text-outline-primary ms-3"
+                      >
+                        <option value="0">Genero</option>
+                        <option value="1">Critica</option>
+                        <option value="2">Distopia</option>
+                        <option value="3">Drama</option>
+                        <option value="4">Fabula</option>
+                        <option value="5">Ficção</option>
+                        <option value="6">Filosofia</option>
+                        <option value="7">Infanto-Juvenil</option>
+                        <option value="8">Politica</option>
+                        <option value="9">Religião</option>
+                        <option value="10">Romance</option>
+                        <option value="11">Satira</option>
+                        <option value="12">Teologia</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!--status-->
                   <div class="input-group mb-3">
                     <span
                       class="input-group-text text-bg-primary"
@@ -158,46 +187,46 @@
                         type="checkbox"
                         class="btn-check"
                         name="btnradio"
-                        id="btnradio2"
+                        id="status-on"
                         autocomplete="off"
                       />
-                      <label class="btn btn-outline-success" for="btnradio2"
+                      <label class="btn btn-outline-success" for="status-on"
                         >✅Disponivel</label
                       >
                       <input
                         type="checkbox"
                         class="btn-check"
                         name="btnradio"
-                        id="btnradio1"
+                        id="status-off"
                         autocomplete="off"
                         checked
                       />
-                      <label class="btn btn-outline-danger" for="btnradio1"
+                      <label class="btn btn-outline-danger" for="status-off"
                         >⚠️Indisponivel</label
                       >
                     </div>
                   </div>
                   <!--valor maximo -->
                   <div class="input-group mb-3">
-                    <label for="range4" class="form-label">VALOR MAX</label>
+                    <label for="valor" class="form-label">VALOR MAX</label>
 
                     <input
                       type="range"
                       class="form-range"
                       min="0"
-                      max="100"
-                      value="50"
-                      id="range4"
+                      max="10"
+                      value="5"
+                      id="valor"
                     />
                     <output
-                      for="range4"
+                      for="valor"
                       id="rangeValue"
                       aria-hidden="true"
                     ></output>
 
                     <script>
                       // This is an example script, please modify as needed
-                      const rangeInput = document.getElementById("range4");
+                      const rangeInput = document.getElementById("valor");
                       const rangeOutput = document.getElementById("rangeValue");
 
                       // Set initial value
@@ -217,7 +246,14 @@
                   >
                     Voltar
                   </button>
-                  <button type="button" class="btn btn-primary">Buscar</button>
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                    id="btnBuscar"
+                    data-bs-dismiss="modal"
+                  >
+                    Buscar
+                  </button>
                 </div>
               </div>
             </div>
@@ -572,7 +608,7 @@
             <!--o Menino Maluquinho-->
             <tr>
               <th scope="row" style="width: 10px" class="align-middle">
-                <h1 class="text-center">5</h1>
+                <h1 class="text-center">6</h1>
               </th>
               <td style="width: 9rem">
                 <div class="d-flex align-items-center" style="width: 8rem">
@@ -635,7 +671,7 @@
             <!--Admiravel Mundo Novo-->
             <tr>
               <th scope="row" style="width: 10px" class="align-middle">
-                <h1 class="text-center">6</h1>
+                <h1 class="text-center">7</h1>
               </th>
               <td style="width: 9rem">
                 <div class="d-flex align-items-center" style="width: 8rem">
@@ -694,7 +730,7 @@
             <!--Irmãos karamazov-->
             <tr>
               <th scope="row" style="width: 10px" class="align-middle">
-                <h1 class="text-center">7</h1>
+                <h1 class="text-center">8</h1>
               </th>
               <td style="width: 9rem">
                 <div class="d-flex align-items-center" style="width: 8rem">
@@ -752,7 +788,7 @@
             <!--Thomas Nelson-->
             <tr>
               <th scope="row" style="width: 10px" class="align-middle">
-                <h1 class="text-center">8</h1>
+                <h1 class="text-center">9</h1>
               </th>
               <td style="width: 9rem">
                 <div class="d-flex align-items-center" style="width: 8rem">
