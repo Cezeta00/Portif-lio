@@ -55,7 +55,7 @@ function infos() {
 function garage(car, motor) {
   let asset = `<div class="card" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title">${car.id}</h5>
+    <h5 class="card-title"><input type="text" id="showMotor" style="display: none;">${car.id}</input></h5>
     <h4> ${car.modelo}  \nColor:${car.cor} </h4>
     <p class="card-text"> Has an amazing ${motor.cilindros} cylinders in ${motor.posicionamento_cilindros}</p>
     <h6 class="card-subtitle mb-2 text-body-secondary">${car.marca}</h6>
@@ -231,4 +231,20 @@ function removeCar(position) {
   }
   console.log("na teoria atualizou o:", cars);
   carOptions();
+}
+
+function showMotor() {
+  let idToShow = $("#showMotor").val();
+  for (let i = motors.length - 1; i >= 0; i--) {
+    if (idToShow == motors[i].id) {
+      let motorToShow = {
+        id: motors[i].id,
+        posicionamento_cilindros: motors[i].observacao,
+        cilindros: motors[i].observacao,
+        litragem: motors[i].litragem,
+        observacao: motors[i].observacao,
+      };
+      console.log(motorToShow);
+    }
+  }
 }
