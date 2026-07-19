@@ -1,0 +1,54 @@
+## Qual Estratégia de Lance Gera Mais Resultado no Google Ads?
+
+Entender como funcionam as estratégias de lances no Google Ads é fundamental para quem deseja atrair mais clientes e gerar vendas. Para escolher a melhor opção, primeiro é preciso compreender a dinâmica da plataforma.
+
+---
+
+### Como Funciona o Leilão do Google
+
+Tanto o Google quanto a Meta operam como um **leilão dinâmico**, onde o espaço publicitário (como o topo dos resultados de pesquisa) é disputado a cada busca realizada pelo usuário.
+
+* **Preço vs. Qualidade:** Embora quem pague mais tenha vantagem, o Google prioriza a **experiência do usuário**. Se o anúncio for ruim ou o site for confuso, você será penalizado pagando mais caro pela mesma posição.
+* **O Bom Trabalho Recompensado:** O Google valoriza a relevância. Isso significa que a palavra-chave pesquisada deve ter total relação com o anúncio, e o anúncio deve alinhar-se perfeitamente com a *landing page*.
+* **Taxa de CTR (Clique por Impressão):** É o indicador de relevância. Se o anúncio aparece 100 vezes e recebe 1 clique, o CTR é de 1%. Um CTR de 10%, por exemplo, mostra que a estrutura está excelente e o público-alvo correto, permitindo que você vença o leilão gastando menos.
+
+---
+
+### As 6 Estratégias de Lances
+
+Ao criar uma campanha, você define como o Google vai cobrar pelo seu orçamento:
+
+1. **Maximizar Cliques:** Foca em gerar o maior volume possível de acessos ao site dentro do orçamento, sem avaliar se o usuário vai converter ou comprar.
+2. **Maximizar Conversões:** O algoritmo busca entregar o maior número possível de *leads* ou vendas, gastando o orçamento diário com foco em pessoas com real intenção de compra.
+3. **CPA Desejado (Custo por Aquisição):** É o limite que você aceita pagar por uma conversão. O Google trabalha para se ajustar a esse teto. Se não conseguir atingir o objetivo a longo prazo, ele reduz a entrega para proteger seu orçamento.
+4. **Maximizar o Valor da Conversão:** Prioriza clientes que tendem a gastar mais, focando no faturamento total. É ideal para e-commerce (onde os valores do *checkout* são integrados) ou para páginas com filtros que qualificam o padrão do cliente.
+5. **ROAS Desejado (Retorno sobre o Investimento em Publicidade):** Variação do item anterior onde você define a porcentagem de retorno financeiro que deseja para cada real gasto (ex: 200% de ROAS).
+6. **Parcela de Impressões:** Pouco utilizada e focada em branding. Você paga para aparecer em posições específicas (como o topo da página) com uma frequência definida, sem focar em cliques ou conversões.
+
+---
+
+### O Maior Erro: Lances Sem Dados
+
+O maior erro dos anunciantes é tentar aplicar estratégias de controle de custo (como CPA ou ROAS desejado) em contas novas.
+
+No tráfego pago, os **dados são o ativo mais importante**. Se a inteligência artificial do Google não sabe quem compra, quando compra e a que preço compra, ela não conseguirá otimizar a campanha. Limitar o custo logo no início trava o aprendizado da inteligência artificial e bloqueia as vendas.
+
+---
+
+### Qual Lance Usar no Começo?
+
+Para quem está começando do zero, o primeiro objetivo deve ser **levantar dados** para treinar o pixel ou a tag do Google, mesmo que isso signifique trabalhar sem lucro imediato no curtíssimo prazo.
+
+* **Fase Inicial (Foco em Volume):** Comece com **Maximizar Conversões** ou **Maximizar o Valor da Conversão** sem definir limites de custo. Deixe a IA trabalhar livremente.
+* **Fase de Transição (Controle de Custo):** Após acumular consistência — cerca de 10 a 15 conversões (ou até 30 no mês) —, altere a estratégia para **CPA Desejado** ou **ROAS Desejado** para escalar com lucro.
+* **Margem de Segurança:** Ao definir o seu CPA ideal (ex: R$ 10 por lead), configure o limite no Google com cerca de **20% a mais** (R$ 12). Isso dá mais liberdade para a ferramenta operar.
+
+> **Nota de Experiência Prática:** Para prestadores de serviço e captação de *leads*, a combinação de **Maximizar Conversões evoluindo para CPA Desejado** traz os melhores resultados. No entanto, para o futuro do mercado, o **Valor da Conversão** tende a ser a estratégia ideal para combater o aumento dos custos de tráfego (CAC).
+
+---
+
+### A Estratégia dos 90 Dias
+
+Para anunciar na internet, o cenário ideal envolve separar um orçamento que possa ser mantido por no mínimo **90 dias** sem que a ausência de retorno imediato quebre a sua empresa.
+
+Encare o investimento inicial como um custo de aprendizado para treinar o algoritmo. Embora o lucro possa e deva aparecer logo no primeiro mês — dependendo da maturidade da sua estrutura e criativos —, 90 dias é o teto técnico: se após esse período as campanhas não trouxerem resultados positivos, há um erro estrutural grave na operação.

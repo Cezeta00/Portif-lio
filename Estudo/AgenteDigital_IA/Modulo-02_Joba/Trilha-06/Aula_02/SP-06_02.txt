@@ -1,0 +1,89 @@
+Para converter essa identificação visual e conceitual da transcrição em um script de metadados interpretável por uma Inteligência Artificial, precisamos estruturar o conteúdo. O objetivo aqui é mapear a **cronologia**, a **hierarquia visual**, as **ações na tela** (como capturas de páginas ou filtros de faturamento) e os **insights conceituais** do vídeo.
+
+Abaixo está o framework de engenharia de metadados e o prompt estruturado pronto para consumo de IA.
+
+---
+
+## 1. Arquitetura de Metadados (JSON Schema)
+
+Este modelo de dados serve para mapear as transições de tela, elementos gráficos e o fluxo lógico do vídeo, permitindo que uma IA processe o conteúdo visual com precisão.
+
+```json
+{
+  "video_metadata": {
+    "series_part": 2,
+    "core_theme": "Fontes de Tráfego (Pago vs. Orgânico) no Marketing de Afiliados",
+    "target_metric": "300 clientes por dia / Faturamento constante"
+  },
+  "visual_timeline": [
+    {
+      "timestamp_range": "0:00 - 1:15",
+      "screen_state": "Talking Head / Apresentação Inicial",
+      "visual_elements": ["Gancho conceitual", "Recapitulação da Parte 1"],
+      "core_message": "Introdução ao tráfego qualificado e zonas de conversão."
+    },
+    {
+      "timestamp_range": "1:16 - 3:00",
+      "screen_state": "Screen Share - Dashboard de Afiliado (Hotmart/Plataforma)",
+      "visual_elements": [
+        "Filtro de faturamento: últimos 15 dias (37 mil reais, 20 mil cliques)",
+        "Filtro de faturamento: últimos 30 dias (117 mil reais)"
+      ],
+      "core_message": "Prova social. Correlação direta entre volume de cliques e faturamento."
+    },
+    {
+      "timestamp_range": "3:01 - 4:14",
+      "screen_state": "Visual Metaphor / Gráfico explicativo",
+      "visual_elements": ["Analogia do campo de futebol", "Visão micro (linha branca) vs. Visão macro (panorama geral)"],
+      "core_message": "A importância de entender o ecossistema completo antes de executar a estratégia."
+    },
+    {
+      "timestamp_range": "4:15 - 11:10",
+      "screen_state": "Screen Share - Ferramentas de Tráfego Pago",
+      "visual_elements": [
+        "Facebook Ads Library: Busca pela página 'Emagrecer de Vez' de Rodrigo Polesso, análise do criativo e página de captura.",
+        "Google Search Engine: Busca pelo termo 'curso online de inglês', identificação visual das tags de anúncio [Ad/Patrocinado] e explicação de arbitragem de afiliados."
+      ],
+      "core_message": "Tráfego Pago requer capital (mínimo R$500 - R$1000), oferece escala rápida, menor aversão ao risco e dispensa exposição pessoal."
+    },
+    {
+      "timestamp_range": "11:11 - 23:36",
+      "screen_state": "Screen Share - Estruturas de Tráfego Orgânico",
+      "visual_elements": [
+        "Blog: Exemplo 'Clube de Valor' via Google Search, posicionamento por palavras-chave.",
+        "Mini Site: Domínio específico 'recrutador24horasfunciona.com.br' (propriedade do autor), focado em conversão direta de produto único.",
+        "Instagram: Perfil de Bruno Perini (autoridade) vs. Perfil de nicho de investimento (sem aparecer), tática de seguir concorrentes.",
+        "YouTube Studio: Dashboard interno mostrando métricas reais (500k views/28 dias, 40k views/48h) e receita de AdSense."
+      ],
+      "core_message": "Tráfego Orgânico possui custo financeiro quase zero, gera ativos de longo prazo (SEO), mas exige consistência e tempo de maturação (3 a 12 meses)."
+    },
+    {
+      "timestamp_range": "23:37 - 28:13",
+      "screen_state": "Talking Head / CTA & Encerramento",
+      "visual_elements": ["Links de direcionamento na descrição (Índice de aulas gratuitas)", "Chamada para a Parte 3 (Estrutura de Vendas)"],
+      "core_message": "Regra de ouro: Escolher apenas 1 ou 2 estratégias sinérgicas e executar até dar certo. Tratar o marketing digital como uma empresa."
+    }
+  ]
+}
+
+```
+
+---
+
+## 2. Prompt de IA Orientado ao Contexto Original
+
+Se você precisar alimentar outra IA (como um gerador de posts, criador de carrosséis ou editor de cortes) usando este vídeo como base, utilize o prompt estruturado abaixo:
+
+```text
+Contexto: Você é um assistente especialista em Marketing Digital e Criação de Conteúdo. Seu objetivo é analisar os metadados estruturados de uma aula focada em Fontes de Tráfego para Afiliados e extrair a lógica central do conteúdo.
+
+Diretrizes de Execução:
+1. Mantenha estritamente o tom pragmático e empreendedor do texto original ("tratar como um negócio", "executar até dar certo").
+2. Considere os dois grandes blocos de dados visuais expostos na tela: 
+   - Bloco de Tráfego Pago (Screenshots de Facebook Ads Library e Google Ads com foco em busca direta e intencional).
+   - Bloco de Tráfego Orgânico (Screenshots de Blogs/SEO, Mini Sites direcionados, Instagram de nicho sem aparecer e métricas internas de YouTube Studio com mais de 500k visualizações).
+3. Respeite a analogia macro do vídeo: o mercado digital precisa ser visto de cima (visão panorâmica do campo de futebol) e não apenas olhando para a grama (focar em um único anúncio sem entender a engrenagem).
+
+Tarefa: Com base na linha do tempo visual fornecida nos metadados, gere um resumo executivo focado em tomada de decisão para um iniciante, detalhando os prós, contras e os requisitos mínimos (financeiros e de tempo) para cada canal de tráfego apresentado na tela. Não invente dados além dos expostos no JSON.
+
+```

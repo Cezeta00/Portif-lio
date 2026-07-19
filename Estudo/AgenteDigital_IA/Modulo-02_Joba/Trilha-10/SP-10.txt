@@ -1,0 +1,174 @@
+Como engenheiro de metadados e especialista em engenharia de prompt, transformei a transcrição visual em uma estrutura lógica e padronizada. O objetivo aqui é converter a narrativa informal e os comandos visuais da tela em um **Script de Execução Estruturado (Sequence Mapping)** que qualquer modelo de linguagem (LLM) ou sistema de automação possa interpretar perfeitamente como um passo a passo técnico.
+
+Abaixo está a estrutura ideal de resposta e o mapeamento dos metadados extraídos do texto.
+
+---
+
+## 🏗️ Prompt de Sistema para IA (Interpretador de Scripts Visuais)
+
+Se você quiser que uma IA execute ou crie conteúdos baseados nessa estrutura, utilize o seguinte prompt de contexto:
+
+```text
+Você é um assistente técnico especializado em automação de interfaces e documentação de processos (RPA/Technical Writer).
+Sua tarefa é ler o script estruturado abaixo e mapear as ações de interface do usuário (UI) para documentar visualmente o passo a passo de criação de um canal no YouTube.
+Mantenha o tom estritamente técnico, focado em ações (clicar, preencher, selecionar) e estados do sistema (logado, deslogado, verificado).
+
+```
+
+---
+
+## 📑 Script Estruturado (Parameter Final)
+
+### 📊 Metadados do Processo
+
+* **Processo:** Criação e Configuração Inicial de Canal no YouTube
+
+
+* **Ambiente principal:** Desktop / Web Browser (com opção de emulação Mobile via "Site para Computador")
+
+
+* **Plataforma Core:** YouTube Studio (Sala de Máquinas)
+
+
+* **Objetivo:** Maximizar o potencial de alcance e garantir a segurança da conta
+
+
+
+---
+
+### ⏱️ Sequência Logística e Ações de Interface (Timeline Mapping)
+
+#### Fase 1: Preparação do Ambiente e Identidade (0:00 - 3:45)
+
+* **Ação 01 [Ajuste de Dispositivo]:** Se o usuário estiver no mobile, acessar as configurações do navegador e ativar a opção "Solicitar site para computador".
+
+
+* **Ação 02 [Autenticação]:** Acessar a página inicial do YouTube.
+
+
+* *Condicional A:* Se não possuir conta Gmail $\rightarrow$ Clicar em "Fazer login" $\rightarrow$ "Usar outra conta" $\rightarrow$ "Criar conta" $\rightarrow$ Selecionar "Para gerenciar meu negócio".
+
+
+* *Condicional B:* Se já possuir conta $\rightarrow$ Clicar no ícone de perfil $\rightarrow$ Selecionar "Crie um canal".
+
+
+
+
+* **Ação 03 [Cadastro de Informações Globais]:**
+* Inserir Nome/Sobrenome.
+
+
+* Inserir Data de Nascimento.
+
+
+* Definir um novo endereço de e-mail exclusivo (E-mail Profissional/Segurança).
+
+
+* Definir e confirmar credenciais de acesso (Senha).
+
+
+* *Segurança Extra:* Adicionar e-mail de recuperação e número de telefone com DDD.
+
+
+
+
+* **Ação 04 [Inicialização do Canal]:** No painel do YouTube, clicar no ícone de perfil $\rightarrow$ "Criar um canal" $\rightarrow$ Definir o Nome do Canal e o Identificador (Handle/@) $\rightarrow$ Clicar em "Criar Canal".
+
+
+
+#### Fase 2: Configurações Internas - Sala de Máquinas (3:46 - 12:00)
+
+* **Ação 05 [Navegação]:** Na página do canal, clicar no botão superior "YouTube Studio" $\rightarrow$ Clicar em "Configurações" (ícone de engrenagem no canto inferior esquerdo).
+
+
+* **Ação 06 [Parâmetros Gerais]:**
+* **Unidade Monetária:** Alterar a moeda padrão para "BRL - Real Brasileiro".
+
+
+* **Canal (Básico):** Definir o país de residência/público-alvo como "Brasil".
+
+
+* **Canal (Tags):** Inserir palavras-chave (Keywords) do nicho na caixa de texto do canal.
+
+
+
+
+* **Ação 07 [Restrições e Recursos Avançados]:**
+* **Configurações Avançadas:** Marcar a opção "Não configurar esse canal como sendo de conteúdo para crianças" (evita limitações de recursos).
+
+
+* **Qualificação para Recursos:** Acessar aba de recursos $\rightarrow$ Clicar em "Verificar número de telefone" $\rightarrow$ Inserir código SMS enviado pelo sistema (Libera vídeos $>15$ min, Thumbnails personalizadas e Lives).
+
+
+
+
+* **Ação 08 [Padrões de Envio (Upload Defaults)]:**
+* **Visibilidade:** Alterar o padrão estrito para "Não listado" (permite o processamento de qualidade e indexação do algoritmo antes da publicação).
+
+
+* **Configurações Avançadas:** Definir licença padrão, selecionar categoria de conteúdo (ex: Pessoas e Blogs ou Educação) e definir o idioma do título/descrição como "Português do Brasil".
+
+
+
+
+* **Ação 09 [Comunidade e Segurança de Chat]:**
+* **Filtros Automatizados:** Ativar a flag "Bloquear links" nos comentários e preencher a caixa de texto com a lista de palavras bloqueadas (ofensas/spam) $\rightarrow$ Clicar em "Salvar".
+
+
+
+
+
+#### Fase 3: Identidade Visual e Branding (12:01 - 18:50)
+
+* **Ação 10 [Layout do Canal]:** Acessar a aba "Personalização" no menu lateral do YouTube Studio. Definir a organização das seções da página inicial (Vídeos normais posicionados acima dos Shorts, trailers e playlists).
+
+
+* **Ação 11 [Branding Elements]:**
+* **Foto de Perfil:** Fazer o upload da imagem e ajustar o recorte circular centralizado.
+
+
+* **Imagem do Banner:** Fazer o upload do banner (construído previamente em ferramentas como o Canva) e ajustar a área de exibição segura para desktop/mobile/TV.
+
+
+* **Marca-d'água do Vídeo:** Fazer o upload do botão gráfico "Inscreva-se" para exibição contínua durante a reprodução dos vídeos.
+
+
+
+
+* **Ação 12 [Informações Básicas e Contato]:**
+* Preencher o campo de "Descrição do canal" com foco nas estratégias do nicho.
+
+
+* Adicionar hiperlinks externos (redes sociais/Instagram).
+
+
+* **Dados de Contato:** Inserir um e-mail comercial secundário (diferente do e-mail de login do canal por motivos estritos de segurança cibernética).
+
+
+
+
+* **Ação 13 [Compilação]:** Clicar no botão "Publicar" no canto superior direito para aplicar todas as modificações no banco de dados da plataforma.
+
+
+
+---
+
+### 🎛️ Variáveis de Sistema Prontas para Injeção de Prompt
+
+Se você precisar alimentar uma IA generativa para criar roteiros similares, use esta tabela de parâmetros:
+
+| Parâmetro (Key) | Tipo de Dado (Type) | Valor Padrão (Default Value) |
+| --- | --- | --- |
+| `DEVICE_TYPE` | String | `Desktop` (Ou `Mobile_Desktop_View`)
+
+ |
+| `ACCOUNT_SECURITY` | Boolean | `True` (Telefone + E-mail de Recuperação ativos)
+
+ |
+| `DEFAULT_VISIBILITY` | String | `Unlisted` (Não listado)
+
+ |
+| `AUDIENCE_RESTRICTION` | String | `Not_For_Kids` (Não infantil)
+
+ |
+| `COMMERCIAL_EMAIL` | String | `{E-mail alternativo diferente do Login}`<br> |

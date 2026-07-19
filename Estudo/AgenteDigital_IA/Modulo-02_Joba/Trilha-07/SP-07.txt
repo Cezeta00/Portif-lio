@@ -1,0 +1,57 @@
+Como engenheiro de metadados e especialista em engenharia de prompts, a melhor forma de transformar essa transcrição em um script legível por IA é criar uma **Estrutura de Metadados de Mídia (Media Metadata Schema)** combinada com marcações de cena.
+
+A IA precisa entender a separação clara entre:
+
+1. **Visual/Screen (O que aparece na tela):** Elementos gráficos, ações físicas, transições de tela.
+2. **Audio/Dialogue (O que é falado):** O texto original adaptado para a locução.
+3. **Context/Metadata (O tom e a intenção):** Instruções de comportamento e ritmo do apresentador.
+
+Abaixo está o core da transcrição transformado em um script estruturado padronizado para processamento de IA (como LLMs de geração de vídeo ou sistemas de decodificação de roteiro).
+
+---
+
+## 📋 Script Estruturado para IA (Video-to-Text Metadata)
+
+```markdown
+# ID DO VÍDEO: INSTA_GROWTH_001
+# IDIOMA: pt-BR
+# TOM DO APRESENTADOR: Dinâmico, informal, irônico/provocativo, expressivo.
+
+---
+
+[CENA_1: INTRODUÇÃO / HOOK]
+- METADADOS VISUAIS: Câmera em plano médio focada no apresentador (Jeová). Fundo de estúdio limpo. Expressões faciais enfatizadas.
+- AÇÃO: Apresentador gesticula e olha fixamente para a câmera.
+- ÁUDIO (DIÁLOGO):
+    "Neste vídeo, eu vou te revelar as duas formas mais simples de ganhar seguidores reais no Instagram. Vou te mostrar como eu consegui quase 100 mil seguidores e, além disso, vou te contar uma verdade meio triste que nenhum outro vídeo do YouTube te fala sobre esse assunto."
+
+---
+
+[CENA_2: TRANSIÇÃO E QUEBRA DE EXPECTATIVA]
+- METADADOS VISUAIS: Corte rápido. Efeito sonoro sutil (pop/swish). O apresentador aproxima-se levemente da câmera.
+- ÁUDIO (DIÁLOGO):
+    "Opa, começando mais um vídeo! Galera, é o seguinte: eu pesquisei bastante antes de gravar e vi que tem uma infinidade de vídeos sobre como ganhar seguidores. A maioria fala exatamente a mesma coisa. E tudo bem, porque se algo funciona, não dá para inventar a roda. Mas tem muita informação por aí que só vai fazer você perder o seu precioso tempo. Então, além dos seguidores reais, se te interessar — e eu sei que vai —, vou te mostrar como ganhar dinheiro com o Instagram. Gostou da ideia? Deixa o like, se inscreve no canal e bora pro conteúdo!"
+
+---
+
+[CENA_3: MUDANÇA DE TELA / ANÁLISE DO PERFIL]
+- METADADOS VISUAIS: Transição de tela cheia (Screen Share). Transição do rosto do apresentador para a tela de um navegador web (Desktop) exibindo a interface do perfil do Instagram do apresentador.
+- ÁUDIO (DIÁLOGO):
+    "Para começar, você precisa dar um motivo para a pessoa te seguir. Não adianta aplicar o método se o seu perfil for vazio. Vamos pular aqui para a tela do meu computador. Por que no PC e não no celular? Porque nesta tela maior fica muito mais tranquilo de você visualizar o tamanho das coisas."
+
+---
+
+[CENA_4: DETALHAMENTO DA BIOGRAFIA (OTIMIZAÇÃO)]
+- METADADOS VISUAIS: Zoom dinâmico na seção da Bio (Biografia) do perfil do Instagram. O cursor do mouse destaca os tópicos (Ex: "YouTube 400k", "Afiliado e Produtor Digital", "Mais de 5 mil alunos", "Mora em Londres").
+- ÁUDIO (DIÁLOGO):
+    "Eu estou quase chegando em 100 mil seguidores, ganhando uns 500 a 600 por dia. Algo fundamental para atingir isso é ter uma boa biografia. É essa parte aqui, onde você descreve quem você é. Existem duas formas de estruturar isso. A primeira é em tópicos que geram interesse imediato e autoridade, usando emojis para ilustrar. Por exemplo, eu destaco meu canal do YouTube, minha atuação como afiliado e produtor, o número de alunos e o fato de morar fora do Brasil. Isso constrói autoridade com quem acaba de chegar."
+
+```
+
+---
+
+## 🤖 Como usar este formato como parâmetro em uma IA
+
+Se você quiser enviar esse texto para uma IA geradora ou organizadora de conteúdo, utilize o seguinte **Prompt de Comando**:
+
+> *"Atue como um Engenheiro de Prompt e Especialista em Conteúdo. Utilize o Roteiro Estruturado fornecido na seção acima como **parâmetro estrito de formato e tom**. Com base nessa estrutura de [CENA], [METADADOS VISUAIS] e [ÁUDIO (DIÁLOGO)], gere a continuação do roteiro mantendo rigorosamente a mesma linguagem informal, dinâmica e direta do apresentador, mapeando as ações visuais de clique em tela descritas no texto original."*

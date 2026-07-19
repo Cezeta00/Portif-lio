@@ -1,0 +1,141 @@
+Para transformar essa transcrição em um script estruturado e facilmente interpretável por uma inteligência artificial (seja para análise de dados, indexação de metadados ou geração de vídeo por IA), aplicamos uma arquitetura de dados baseada em **marcações semânticas (Tags)**, **segmentação de cenas (Time-Blocks)** e **descrições visuais parametrizadas (Prompts de Geração)**.
+
+Abaixo está o mapeamento técnico e a reescrita do núcleo do texto no formato de **Script de Metadados Visuais**:
+
+---
+
+## 📑 SCRIPT DE METADADOS E PROMPTS DE IA (CORE TRANSCRIP)
+
+```json
+{
+  "video_metadata": {
+    "title": "Aula 04 - Gatilhos Mentais Aplicados a Vendas",
+    "creator": "João Castanheira",
+    "core_topic": "Marketing Digital e Persuasão",
+    "target_audience": "Infoprodutores e Vendedores Digitais"
+  },
+  "scenes": [
+    {
+      "scene_id": "SCENE_01_INTRO",
+      "time_block": "00:00 - 00:51",
+      "visual_prompt": "Medium shot of a young male entrepreneur speaking directly to the camera in a modern, well-lit digital marketing studio office. Dynamic camera cuts to capture engagement. Professional lighting.",
+      "on_screen_elements": {
+        "text_overlay": "GATILHOS MENTAIS VENDEM?",
+        "graphics": "Subtle digital countdown indicator or progress bar"
+      },
+      "core_intent": "Hook the user by narrative storytelling regarding the difficulty of applying psychological triggers in daily sales.",
+      "metadata_tags": ["Hook", "Storytelling", "Problem Identification"]
+    },
+    {
+      "scene_id": "SCENE_02_CORE_INTRO",
+      "time_block": "00:51 - 01:40",
+      "visual_prompt": "Fast-paced editing transition. The speaker gestures energetically. Pop-up graphics with the number '10' and a dollar sign emoji floating over the shoulder.",
+      "on_screen_elements": {
+        "text_overlay": "10 GATILHOS MENTAIS",
+        "lower_thirds": "João Castanheira - Especialista em Marketing Digital"
+      },
+      "core_intent": "Introduce the value proposition (10 triggers to increase revenue) and include an organic Call to Action (CTA for Likes).",
+      "metadata_tags": ["CTA", "Value Proposition", "Engagement"]
+    },
+    {
+      "scene_id": "SCENE_03_TRIGGER_AUTHORITY",
+      "time_block": "01:40 - 02:52",
+      "visual_prompt": "Split-screen visualization or rapid b-roll overlay. Left: A police officer in a formal uniform standing by a patrol car. Right: A doctor in a white lab coat with a stethoscope around the neck. Clean cinematic cuts.",
+      "on_screen_elements": {
+        "text_overlay": "GATILHO: AUTORIDADE",
+        "subtitles": "Respeito e Confiança Imediata"
+      },
+      "core_intent": "Provide a universal social proof baseline using clear visual analogies of authority (Police and Doctors).",
+      "metadata_tags": ["Concept Anchor", "Analogy", "Authority Trigger"]
+    },
+    {
+      "scene_id": "SCENE_04_TRIGGER_NOVELTY",
+      "time_block": "02:52 - 07:07",
+      "visual_prompt": "Close-up macro shot of an advanced product battery with a glowing lit-up chemical compound inside, transitioning to a specialized shampoo bottle. B-roll of an online digital event layout with futuristic lines.",
+      "on_screen_elements": {
+        "text_overlay": "1. NOVIDADE (Mecanismo Único)",
+        "graphics": "Bullet points: Mecanismo Único de Produto, Big Idea de Evento, Evite 'Mais do Mesmo'"
+      },
+      "core_intent": "Explain the Novelty trigger focusing on differentiation. Human psychological drive towards new stimuli vs relationship/product fatigue.",
+      "metadata_tags": ["Novelty Trigger", "Unique Mechanism", "Product Differentiation"]
+    },
+    {
+      "scene_id": "SCENE_05_TRIGGER_PROMISE",
+      "time_block": "07:07 - 10:00",
+      "visual_prompt": "B-roll animation of a crowded text webpage highlighting the top header (Headline). Transition to a physical scene of a cozy bar interior where a waiter talks enthusiastically to a group of friends.",
+      "on_screen_elements": {
+        "text_overlay": "2. PROMESSA",
+        "graphics": "Visual arrow pointing to: Início do Criativo / Início da Página"
+      },
+      "core_intent": "Demonstrate that the main promise must occur within the first few seconds of interaction to capture fragmented human attention.",
+      "metadata_tags": ["Promise Trigger", "Hook Retention", "Attention Economy"]
+    },
+    {
+      "scene_id": "SCENE_06_TRIGGER_PROOF",
+      "time_block": "10:00 - 12:27",
+      "visual_prompt": "A continuous flow chain diagram on screen. Step 1: Argument/Promise -> Step 2: Proof (Testimonial, Scientific Data, Authority validation). Showcase smartphone screen with positive WhatsApp text notifications.",
+      "on_screen_elements": {
+        "text_overlay": "3. PROVA",
+        "graphics": "Flowchart: Amarrar Ideias -> Argumentação + Depoimento"
+      },
+      "core_intent": "Highlight the structural error of unlinked promises. Teach the systematic placement of social proof and scientific proof across ads and remarketing.",
+      "metadata_tags": ["Proof Trigger", "Social Proof", "Objection Handling", "Remarketing"]
+    },
+    {
+      "scene_id": "SCENE_07_URGENCY_SCARCITY",
+      "time_block": "12:27 - 14:19",
+      "visual_prompt": "Split display: A digital countdown clock ticking down rapidly from 24:00:00 (Urgency) and a stock counter decreasing from 10 to 1 items remaining (Scarcity). B-roll of a retail stockroom worker searching for the last hidden unit.",
+      "on_screen_elements": {
+        "text_overlay": "4 & 5. URGÊNCIA E ESCASSEZ",
+        "graphics": "Keywords: Tempo limite, Unidades Restantes, Procrastinação"
+      },
+      "core_intent": "Target human decision-making delays. Use scarcity and urgency limitations directly after the main offer to force closing behaviors.",
+      "metadata_tags": ["Urgency", "Scarcity", "Closing Techniques"]
+    },
+    {
+      "scene_id": "SCENE_08_ACRESCENT_EMPATHY",
+      "time_block": "14:19 - 19:01",
+      "visual_prompt": "Over-the-shoulder view of two people talking. Contrast graphic: Red X over 'Direct Confrontation' vs Green Checkmark over 'Storytelling + Validation'. Brief visual narrative of a couple calmly resolving a home disagreement.",
+      "on_screen_elements": {
+        "text_overlay": "6. ACOLHIMENTO (Inversão de Crença)",
+        "graphics": "Formula: Validar Sentimento -> Contar História -> Propor Nova Direção"
+      },
+      "core_intent": "Deconstruct ego defense mechanisms. Instruct the AI to process human behavioral reframing by listening, mirroring experience, and then executing a soft belief inversion.",
+      "metadata_tags": ["Empathy Trigger", "Belief Inversion", "Cognitive Reframing"]
+    },
+    {
+      "scene_id": "SCENE_09_SPEED_GUARANTEE",
+      "time_block": "19:01 - 20:46",
+      "visual_prompt": "Icon combo graphic on screen combining a fast stopwatch (Speed) and an official signed security stamp document (Guarantee). Text details extra bonuses added to basic return policies.",
+      "on_screen_elements": {
+        "text_overlay": "7. VELOCIDADE + SUPER GARANTIA",
+        "subtitles": "Resultado Rápido ou Reembolso Dobrado"
+      },
+      "core_intent": "Combine two highest leverage conversion variables: fast perceived time to outcome paired with absolute risk reversal profiles.",
+      "metadata_tags": ["Risk Reversal", "Time-to-Value", "Irresistible Offer"]
+    },
+    {
+      "scene_id": "SCENE_10_CONGRUENCE",
+      "time_block": "20:46 - 23:22",
+      "visual_prompt": "Architectural mock-up overlay map showing a real estate property surrounded by upcoming construction indicators: a green eco-park, a supermarket, and a mini-mall. Connected via logical arrows.",
+      "on_screen_elements": {
+        "text_overlay": "8. CONGRUÊNCIA (O 'Porquê')",
+        "subtitles": "Isso funciona porque..."
+      },
+      "core_intent": "Provide cognitive alignment. Use logical rationalization patterns ('Reason Why') to validate high emotional sales claims using structured data inputs.",
+      "metadata_tags": ["Congruence", "Reason Why", "Logical Justification"]
+    },
+    {
+      "scene_id": "SCENE_11_COMMON_ENEMY",
+      "time_block": "23:22 - End",
+      "visual_prompt": "Abstract graphic representation of an isolated common concept block or bad methodology block targeted by an arrow. The speaker points directly forward as the transcription reaches its limit.",
+      "on_screen_elements": {
+        "text_overlay": "9 & 10. INIMIGO COMUM & HISTÓRIA"
+      },
+      "core_intent": "Shift individual blame away from the prospect toward a shared systematic obstacle to create instant alignment and team dynamic.",
+      "metadata_tags": ["Common Enemy", "Narrative Alignment", "Triggers Closing"]
+    }
+  ]
+}
+
+```

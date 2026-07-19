@@ -1,0 +1,70 @@
+Como Engenheiro de Metadados e Engenheiro de Prompt, a melhor estratégia para transformar uma transcrição bruta (repleta de vícios de linguagem, repetições e quebras de tempo) em um formato otimizado para Inteligência Artificial é utilizar **Tags Semânticas Aninhadas (padrão XML/Markdown)**. Isso elimina o ruído gramatical e entrega os vetores de contexto perfeitamente limpos para o modelo processar.
+
+Abaixo está a reescrita do núcleo do seu texto estruturada para IA, seguida pelo modelo de prompt estrutural para utilizá-la como parâmetro final.
+
+---
+
+## 1. Estrutura de Metadados da Transcrição (O Script para IA)
+
+```markdown
+<video_analysis>
+  <metadata>
+    <source_id>Aula-10</source_id>
+    <speaker>João Castanheira</speaker>
+    <niche>Marketing Digital / Infoprodutos</niche>
+    <core_theme>Os impactos colaterais e pontos negativos de enriquecer jovem</core_theme>
+    <authority_proof>Placa Ultimate Black da Hotmart (Faturamento superior a R$ 1 Milhão)</authority_proof>
+  </metadata>
+
+  <content_blocks>
+    <chapter id="1" title="Introdução e Contextualização">
+      <summary>O palestrante desmistifica a visão idealizada do enriquecimento ("mar de rosas") e propõe expor de 5 a 6 aspectos negativos da sua trajetória real no mercado digital, validando sua autoridade através de conquistas concretas na plataforma Hotmart.</summary>
+    </chapter>
+
+    <chapter id="2" title="1º Lado Ruim: Percepção Involuntária de Esnobismo">
+      <summary>Mudança inevitável de patamar sociocultural e financeiro. À medida que o estilo de vida evolui, os assuntos naturais do cotidiano (ex: destinos de viagem como Maldivas vs. Caldas Novas) geram um choque de realidade. As pessoas ao redor interpretam essa disparidade como arrogância, criando um distanciamento social indesejado.</summary>
+    </chapter>
+
+    <chapter id="3" title="2º Lado Ruim: Redução Drástica do Círculo Social">
+      <summary>Isolamento social e escassez de amigos genuínos. Devido ao julgamento constante e à incompatibilidade de rotinas, o palestrante aponta a tendência de se relacionar majoritariamente com pares de mesmo poder aquisitivo para que o diálogo flua sem barreiras. Amizades antigas passam a filtrar o contato através de interesses financeiros ou pedidos de favores.</summary>
+    </chapter>
+
+    <chapter id="4" title="3º Lado Ruim: Paranoia e Mitigação de Riscos de Segurança">
+      <summary>A perda de privacidade provocada pela exposição financeira e pelo crescimento de seguidores exige atenção extrema à segurança física. Há restrição de liberdade geográfica e interferência direta nas decisões de consumo (ex: deixar de adquirir carros de alto luxo para evitar tornar-se alvo de sequestros ou assaltos).</summary>
+    </chapter>
+
+    <chapter id="5" title="4º Lado Ruim: O Efeito Repelente Interpessoal">
+      <summary>Inibição de terceiros. Novas conexões ou pessoas de fora do meio financeiro tornam-se intimidadas ou receosas na presença do indivíduo que enriqueceu. Isso gera um bloqueio na comunicação, impedindo que as pessoas ajam com naturalidade e dificultando relações espontâneas.</summary>
+    </chapter>
+
+    <chapter id="6" title="5º Lado Ruim: Crise de Propósito e Perda de Ambição">
+      <summary>Acomodação gerada pelo extremo conforto financeiro. Sem a urgência da sobrevivência material ("preciso crescer para pagar as contas"), há um risco severo de perda de motivação, ócio e quadros depressivos. O cenário exige um esforço consciente para transicionar a ambição financeira para propósitos mais profundos e altruístas (ex: prover independência financeira para familiares).</summary>
+    </chapter>
+  </content_blocks>
+</video_analysis>
+
+```
+
+---
+
+## 2. Engenharia de Prompt: Como Usar Como Parâmetro Final
+
+Para que a IA consuma essa estrutura sem se perder, você deve isolar as instruções de comando do bloco de dados. Use o template abaixo como o esqueleto do seu prompt:
+
+> **Template de Comando:**
+> Você é um especialista em análise de conteúdo e arquitetura de informação. Sua tarefa é processar o bloco de metadados estruturados de um vídeo e gerar um **[Insira aqui o output desejado, ex: roteiro resumido / sequência de posts / insights estruturados]**.
+> **Diretrizes de Execução:**
+> 1. Baseie-se estritamente nas informações contidas nas tags `<chapter>` do parâmetro fornecido.
+> 
+> 
+> 2. Mantenha a essência pragmática do palestrante, focando no contraste entre o sucesso financeiro e o custo social/psicológico.
+> 
+> 
+> 
+> 
+> **Parâmetro de Entrada (Dados do Vídeo):**
+> [Cole aqui o bloco de código da seção 1]
+
+---
+
+Qual é o objetivo final ou formato de saída (ex: post para redes sociais, um resumo executivo, tópicos de estudo) que você pretende gerar a partir desse script estruturado?

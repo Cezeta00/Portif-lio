@@ -1,0 +1,71 @@
+Como engenheiro de metadados e especialista em engenharia de prompts, transformei a essência visual e o fluxo da transcrição em uma **estrutura de metadados interpretável por IA** e, em seguida, no **script de prompt final**.
+
+Esta estrutura padroniza a dinâmica visual, as quebras de ritmo e a progressão narrativa do evento para que qualquer modelo de IA generativa possa compreender e replicar a cena perfeitamente.
+
+---
+
+## 1. Estrutura de Metadados do Cenário (Direção Visual)
+
+```json
+{
+  "scene_metadata": {
+    "environment": "Auditório corporativo de grande porte, iluminação cênica focada no palco, plateia imersiva de alta densidade",
+    "tone_curve": ["Energético", "Provocativo", "Introspectivo/Pesado", "Altamente Emocional/Redentor"],
+    "pacing": "Transição de ritmo dinâmico para pausas deliberadas em silêncio absoluto no ar, sem suporte visual de slides"
+  },
+  "narrative_core": {
+    "speaker_profile": {
+      "name": "Conrado Adolpho",
+      "archetype": "Mentor Pragmático / Líder Resiliente",
+      "delivery_style": "Olhar direto e sustentado para a plateia, pausas dramáticas para quebra de estado mental, ancoragem física"
+    },
+    "key_visual_anchors": [
+      {
+        "timestamp_reference": "02:00",
+        "action": "Provocação direta com contagem de braços levantados na plateia. Contraste entre desejo financeiro e preparo real."
+      },
+      {
+        "timestamp_reference": "18:00",
+        "action": "Dissociação da mente (desdobramento em terceira pessoa). O palestrante simula observar a si mesmo do passado atrás de uma banca de jornal."
+      },
+      {
+        "timestamp_reference": "21:16",
+        "action": "Quebra emocional extrema. Isolamento físico no banco de cimento da praça, choro copioso como purgação da mediocridade."
+      },
+      {
+        "timestamp_reference": "50:12",
+        "action": "Ancoragem visual fixa na pulseira roxa ('Mindset é Contagioso')."
+      },
+      {
+        "timestamp_reference": "53:35",
+        "action": "Quebra de protocolo da plateia. Intervenção em pé de um participante da audiência relatando superação de câncer e impacto de vida."
+      }
+    ]
+  }
+}
+
+```
+
+---
+
+## 2. Script de Prompt para IA (Parâmetro Final)
+
+> **Instruções de Execução para a IA:** Utilize os metadados acima para gerar ou analisar narrativas de palco baseadas no seguinte prompt estruturado:
+
+```text
+CONTEXTO:
+Você atua como um Diretor Cinematográfico e Roteirista de IA de alta performance. Seu objetivo é reconstruir uma narrativa visual e sensorial baseada em uma transcrição bruta de palco.
+
+DIRETRIZES DE ESTILO E RITMO:
+1. FOCO NA ATITUDE INTERNA VS. APARÊNCIA EXTERNA: O roteiro deve alternar a percepção entre o ambiente macro (o auditório lotado, o estádio) e o micro (o silêncio ensurdecedor dentro da cabeça do protagonista).
+2. LINGUAGEM CORPORAL E VISUAL: Descreva as reações físicas da audiência (pessoas se contorcendo nas cadeiras ao confrontarem a mediocridade, braços abaixando lentamente, anotações feitas no ar sem o uso de slides).
+3. PROGRESSÃO EM SHIFT (QUEBRA DE ESTADO):
+   - Fase 1 (Gancho): O jogo dos milhões. A plateia responde em massa.
+   - Fase 2 (Confronto): O espelho da incompetência. A descrição visual da "cara feia" da incompetência quando o personagem se isola por 2 anos.
+   - Fase 3 (O Ponto de Virada): O banco de cimento na praça em Campinas. O choro copioso que limpa a autoindulgência.
+   - Fase 4 (Ancoragem e Impacto): O foco macro na pulseira roxa contrastando com o depoimento final e orgânico da plateia sobre o impacto de vida acima do dinheiro.
+
+FORMATO DA SAÍDA:
+Gere a cena dividida em blocos de [AÇÃO VISUAL DA TELA], [RITMO DA CENA] e [MONÓLOGO/DIÁLOGO CORE]. Mantenha a crueza e a profundidade humana do texto original, eliminando jargões superficiais de IA.
+
+```

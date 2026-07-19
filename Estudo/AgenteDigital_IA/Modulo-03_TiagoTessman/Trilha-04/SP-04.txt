@@ -1,0 +1,136 @@
+Como engenheiro de metadados e especialista em engenharia de prompt, o objetivo é extrair a **lógica estrutural** da transcrição visual e transformá-la em dados altamente escaneáveis, sem firulas ou adjetivos desnecessários.
+
+Para que uma IA compreenda a dinâmica descrita na tela, precisamos estruturar o conteúdo através de **metadados descritivos**, **mapeamento de fluxo de tela** e uma **matriz de decisão sintética** baseada nas regras técnicas do algoritmo da Meta.
+
+Abaixo está o script técnico gerado a partir do seu parâmetro:
+
+---
+
+## 📑 Metadados do Script
+
+* **Domínio:** Gestão de Tráfego Pago / Performance Digital
+* **Plataforma Analisada:** Meta Ads (Facebook & Instagram)
+
+
+* **Contexto Temporal:** Cenário Operacional de 2026
+
+
+* **Objetivo Central:** Análise comparativa e tomada de decisão sobre Destinos de Conversão (WhatsApp vs. Landing Page vs. Formulário Instantâneo)
+
+
+
+---
+
+## 🖥️ Mapeamento de Interface e Fluxo Visual (Meta Ads)
+
+Quando o usuário cria uma campanha focada em performance (Vendas ou Leads), o gerenciador apresenta a seguinte árvore de decisões de destino após 3 a 4 cliques:
+
+```
+[Campanha de Performance: Leads/Vendas]
+       │
+       ├──► 🟢 Destinos Recomendados (Foco do Script)
+       │     ├── WhatsApp[cite: 1]
+       │     ├── Landing Page (Site Próprio)[cite: 1]
+       │     └── Formulário Instantâneo[cite: 1]
+       │
+       └──► 🔴 Destinos Descartados (Baixa Performance / Sem Conversão Direta)
+             ├── Site + Ligações Fone[cite: 1]
+             ├── Messenger[cite: 1]
+             ├── Formulário Instantâneo + Messenger[cite: 1]
+             ├── Direct do Instagram[cite: 1]
+             └── Ligações Diretas[cite: 1]
+
+```
+
+---
+
+## 📊 Matriz Logística de Tomada de Decisão (Regras de Negócio para a IA)
+
+| Destino de Conversão | Cenário de Aplicação (Quando Usar) | Vantagem Estrutural | Desafio Técnico / Métrica Crítica |
+| --- | --- | --- | --- |
+| **WhatsApp** | • Início de operação do zero
+
+<br>
+
+<br>• Baixo orçamento (R$ 500 a R$ 2.500/mês)
+
+<br>
+
+<br>• Negócios locais com segmentação estreita
+
+ | • Taxa de conversão humana até 4x maior que sites
+
+<br>
+
+<br>• Redução imediata da objeção de compra
+
+ | • **Tempo de resposta:** Perda crítica de lead se passar de 2 minutos
+
+<br>
+
+<br>• Sinal vazio de dados para o algoritmo no longo prazo
+
+ |
+| **Landing Page** | • Operações em escala (Acima de R$ 2.000/dia)
+
+<br>
+
+<br>• Sobrecarga do time de vendas no WhatsApp
+
+<br>
+
+<br>• Necessidade de inteligência multicanal
+
+ | • Propriedade e distribuição de dados (Pixel/Tags) para Meta, Google e TikTok
+
+<br>
+
+<br>• Otimização profunda de algoritmos (Meta Advantage+)
+
+ | • Custo por Lead (CPL) inicial mais elevado devido ao atrito de carregamento e leitura
+
+ |
+| **Formulário Instantâneo** | • Operações sem infraestrutura de site próprio
+
+<br>
+
+<br>• Foco em captação massiva de contatos dentro da rede
+
+ | • Baixíssima barreira de entrada
+
+<br>
+
+<br>• Autopreenchimento nativo dos dados pela Meta
+
+ | • Risco severo de leads desqualificados acidentais ("dedo gordo")
+
+<br>
+
+<br>• Dados retidos exclusivamente no ecossistema Meta
+
+ |
+
+---
+
+## 🛠️ Regra Base de Otimização (Cálculo do Custo Real)
+
+Para processar a viabilidade das campanhas, a IA não deve comparar o Custo por Lead (CPL) bruto, mas sim aplicar a seguinte fórmula de equivalência de qualificação:
+
+$$\text{Custo por Lead Qualificado} = \frac{\text{Investimento Total}}{\text{Leads Realmente Qualificados}}$$
+
+* **Exemplo Prático extraído da Transcrição:** Se 10 leads de WhatsApp a R$ 10 geram apenas 1 lead qualificado, o Custo Real é R$ 100. Se a Landing Page traz 1 lead direto a R$ 100, os canais empatam em eficiência financeira, mas a Landing Page vence em inteligência de dados.
+
+
+
+---
+
+## 📉 Arquitetura Recomendada de Funil Híbrido
+
+```
+[Tráfego Frio] ──► Landing Page (Filtro e Captura de Dados Profundos)[cite: 1]
+                        │
+                        └──► [Usuário Não Converteu] ──► Remarketing Direto para o WhatsApp[cite: 1]
+
+```
+
+Com esta estrutura limpa e parametrizada em tabelas, fluxos e fórmulas, qualquer LLM consegue interpretar com precisão o contexto de tráfego pago ensinado no vídeo e aplicar as regras de decisão lógica perfeitamente.

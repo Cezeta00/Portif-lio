@@ -1,0 +1,59 @@
+Como engenheiro de metadados e arquiteto de prompts, o objetivo aqui é traduzir uma transcrição verbal e visual (que inclui gestos, quadros, papéis e interações com a tela) em uma estrutura de dados e diretrizes de execução lógica que qualquer LLM (Modelo de Linguagem) consiga interpretar e replicar com precisão.
+
+Para transformar essa identificação visual e narrativa em um script legível por IA, estruturamos o prompt combinando **Metadados Extruturais** (o contexto e regras do ecossistema), a **Engenharia de Recursos do Roteiro** (baseada no livro mencionado no texto) e o **Esquema Sequencial do Fluxo de Tela**.
+
+Abaixo está o prompt otimizado pronto para ser interpretado por uma IA:
+
+---
+
+```markdown
+# PROMPT PATTERN: ARQUITETURA DE ROTEIRO VISUAL CONCRETO
+## Papel: Engenheiro de Conteúdo e Roteirista Especialista em Retenção (Estilo "Joba")
+
+### 1. CONTEXTO E METADADOS DO ECOSSISTEMA
+- **Objetivo Central:** Transformar conteúdo puramente informativo em uma narrativa emocional, simples, curiosa, concreta e confiável que force o espectador a se importar com o vídeo.
+- **Framework Teórico:** Baseado nos princípios do livro "Ideias que Colam" (Made to Stick).
+- **Tom de Voz:** Humano, direto, prático, focado na dor do criador de conteúdo, sem academicismos ou superficialidades.
+- **Elementos Visuais de Suporte (Props):** Uso de elementos físicos ou digitais na tela (ex: um papel com tópicos, desenhos simples, captura de tela de uma ferramenta de IA) para ancorar conceitos abstratos.
+
+---
+
+### 2. DIRETRIZES DE ENGENHARIA DE PROMPT (REGRAS CORE)
+A IA deve construir o roteiro garantindo que cada bloco passe pelo seguinte checklist antes da entrega:
+1. **Simplicidade:** Identificar a ideia central única. Se o roteiro tentar ensinar 10 coisas, o usuário esquecerá tudo. Cortar o que não é essencial, mesmo que seja bom.
+2. **Curiosidade (Quebra de Padrão):** Iniciar abrindo um "loop" mental. Focar na pergunta que o público deve se fazer, e não apenas na informação que será entregue.
+3. **Concretude:** Substituir conceitos vagos por metáforas visuais cotidianas, ações específicas ou objetos que o cérebro possa desenhar instantaneamente.
+4. **Emocional/Confiabilidade:** Gerar conexão com as dores reais do público e embasar os argumentos em fontes sólidas (livros, testes práticos), evitando achismos.
+
+---
+
+### 3. ESQUEMA SEQUENCIAL DO FLUXO (SCRIPT COM DIRETRIZES VISUAIS)
+
+#### BLOCO 1: O GANCHO E A SURPRESA (0:00 - 1:34)
+- **Ação Visual Esperada:** O apresentador fala diretamente para a câmera, demonstrando empatia com uma dor comum (ex: esforço vs. baixo resultado). Exibe fisicamente um papel ou elemento que indique os pontos do vídeo (gerando mistério sobre o conteúdo).
+- **Diretriz de Escrita da IA:** Crie uma quebra de padrão contra-intuitiva logo nas primeiras linhas. 
+- *Exemplo de Parâmetro Fixo:* "Quanto mais informação você coloca no seu roteiro, menos as pessoas se importam com o seu vídeo."
+- **Objetivo:** Abrir um loop mental na cabeça do espectador ("Como assim?").
+
+#### BLOCO 2: A ESSÊNCIA DA MENSAGEM / IDEIA CENTRAL (1:35 - 5:52)
+- **Ação Visual Esperada:** Transição para um quadro negro, tablet ou folha de papel onde os tópicos centrais são revelados de forma condensada e limpa.
+- **Diretriz de Escrita da IA:** Definir claramente o ponto focal do conteúdo. O texto deve forçar o apresentador a fazer perguntas de poda: "O que eu preciso cortar deste conteúdo para manter apenas o essencial?".
+
+#### BLOCO 3: DEMONSTRAÇÃO PRÁTICA E CONCRETA (5:53 - 14:17)
+- **Ação Visual Esperada:** Compartilhamento de tela mostrando uma ferramenta real (ex: interface de uma IA auxiliar, anotações reais) ou a encenação de uma metáfora visual.
+- **Diretriz de Escrita da IA:** Desenvolver exemplos comparativos divididos estritamente em duas colunas conceituais: **Abstrato** (Como a maioria fala) vs. **Concreto** (Como deve ser dito).
+- *Exemplo de Metáfora Externa:* Comparar a estrutura do conteúdo com a fachada impecável de um restaurante que falha na entrega do prato principal (retenção interna).
+
+#### BLOCO 4: CHECKLIST DE APLICAÇÃO E ENCERRAMENTO (14:18 - Fim)
+- **Ação Visual Esperada:** O apresentador recapitula os pontos apontando diretamente para os elementos visuais gerados ao longo do vídeo. Apresenta uma chamada para ação (CTA) contextualizada e de baixo atrito.
+- **Diretriz de Escrita da IA:** Estruturar um checklist final rápido e acionável com os 5 pilares do conteúdo que cola: Simples, Curioso, Concreto, Emocional e Confiável. Finalizar direcionando para o próximo passo lógico do funil (ex: curso gratuito ou material de apoio).
+
+```
+
+---
+
+### Como utilizar este texto como parâmetro final:
+
+Quando você for alimentar a IA para gerar um novo roteiro, basta enviar este template estruturado e complementar com o seu tema específico no final, utilizando o comando:
+
+> *"Utilizando a estrutura de metadados e o fluxo visual descritos acima, crie um roteiro completo de 10 minutos sobre o tema: **[Insira o seu novo tema aqui, ex: Como organizar estudos de programação de forma eficiente]**."*

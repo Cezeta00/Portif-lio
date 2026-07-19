@@ -1,0 +1,90 @@
+Aqui está a reestruturação e tradução da sua transcrição visual e em áudio para um **Script de Metadados e Engenharia de Prompt**.
+
+Para que uma Inteligência Artificial entenda e replique perfeitamente a direção, o tom, o ritmo e os elementos visuais implícitos nesse texto, dividi o conteúdo em camadas técnicas estruturadas: **Contexto Geral**, **Câmeras e Ambientação**, **Diretrizes de Tom/Estilo** e o **Script Decupado por Blocos Temáticos**.
+
+---
+
+## 1. Metadados do Prompt (Contexto para a IA)
+
+* **Objetivo:** Gerar ou analisar um roteiro audiovisual focado em infotenimento, storytelling realista e conversas de negócios de nicho.
+* **Atores Principais:**
+* **Entrevistador (Joba):** Dinâmico, focado em estratégias de monetização e marketing, atua como mentor.
+* **Entrevistado (Thales Fernandes - "Não Sou Barista"):** Ex-contador, apaixonado por café, técnico, pragmático e focado no crescimento focado em negócios sustentáveis de pequeno porte.
+
+
+* **Estilo Visual Implícito:** Estúdio profissional moderno de gravação, iluminação aconchegante (tons quentes de cafeteria ou madeira), guitarras ou equipamentos de café ao fundo para composição de cenário.
+
+---
+
+## 2. Estrutura do Script (Camada de Prompt e Transcrição Técnica)
+
+### Bloco 1: A Promessa e o Gancho (Hook)
+
+* **Direção de Vídeo (IA):** Cortar para o rosto do entrevistado (Thales). Plano fechado (Close-up). Expressão sincera e firme.
+* **Direção de Áudio:** Som limpo, sem eco, tom de revelação de negócios.
+
+> **Thales:** "Vi a perspectiva na contabilidade de ter o que eu sonhava. No final do segundo ano de canal eu já estava ganhando até mais do que eu ganhava com a contabilidade."
+
+* **Direção de Vídeo (IA):** Transição rápida para plano aberto (Medium Shot) mostrando os dois participantes no estúdio. Joba assume a fala com alta energia.
+
+> **Joba:** "Opa, aqui é o Joba e hoje nós vamos entrevistar um cara que tem um canal num nicho bem diferente... Muita gente acha que vai precisar de milhões e milhões de visualizações para conseguir viver do canal... Com vocês: Thales Fernandes!"
+
+---
+
+### Bloco 2: A Definição do Nicho e Conceito
+
+* **Direção de Vídeo (IA):** Câmera foca em Thales. Inserir imagens de apoio (B-roll) em formato split-screen ou sobreposição mostrando preparo manual de café (V60, moedores manuais) conforme ele explica.
+
+> **Thales:** "O nicho do meu canal é café... Eu quis aprender sobre café não para me tornar um barista para trabalhar numa cafeteria... mas para ter o melhor café possível dentro de casa. Café depende totalmente do preparo... Se você não souber preparar, você vai fazer um café ruim."
+
+---
+
+### Bloco 3: Transição de Carreira e a Quebra de Paradigmas
+
+* **Direção de Vídeo (IA):** Alternância de câmeras baseada em quem fala (A-Roll dinâmico). Tom de voz mais íntimo e reflexivo.
+
+> **Thales:** "Eu sou formado em contabilidade, tenho CRC e tudo... mas eu não gostava da área... Eu sonhava em ter o estilo de vida que gostaria de ter: trabalhando mais sozinho, de maneira independente, sendo dono da minha agenda."
+> **Joba:** "E qual foi o momento que você percebeu: 'Eita, isso daqui pode dar certo'?"
+> **Thales:** "Foi quando eu cheguei no teu canal... Eu percebi que o AdSense nunca ia pagar nada pro meu tipo de visualização... O pessoal só vivia de AdSense com canais milionários. Quando comecei a notar as monetizações de afiliados, notei que podia dar bom. No segundo ano faturei perto de R$ 100.000."
+
+---
+
+### Bloco 4: Estratégias de Monetização (O Core Técnico)
+
+* **Direção de Vídeo (IA):** Exibição de gráficos limpos ou tópicos na tela imitando pós-produção profissional. O tom muda para uma masterclass de negócios.
+* **Estratégia 1: Planilha de Recomendações Atualizável**
+> **Thales:** "Criei uma planilha de recomendações... Coloquei os produtos que acho interessantes... Se eu precisar alterar um link que caiu ou mudou de preço, altero na planilha e muda para todos os vídeos automaticamente."
+
+
+* **Estratégia 2: Canais de Transmissão Automatizados/Manuais**
+> **Thales:** "Criei o canal de transmissão no WhatsApp e no Telegram... Monitoro promoções de moedores e máquinas. Isso gera tráfego e me dá muito retorno na venda indireta da Amazon e do AliExpress."
+
+
+
+---
+
+### Bloco 5: O Elemento Humano e Conexão por Hobbies
+
+* **Direção de Vídeo (IA):** Clímax visual e de descontração. Thales se inclina para o lado, pega um objeto físico pesado debaixo da mesa e exibe diretamente para a câmera.
+* **Ação de Adereço (Prop Action):** Uma guitarra Gibson Les Paul Standard, cor clássica, acabamento brilhante.
+
+> **Thales:** "A penúltima loucura que eu fiz... vou mostrar para você... Uma Gibson Standard. Olha que coisa linda."
+> **Joba:** "Sério, essa é linda demais... Susten absurdo, né?"
+
+---
+
+### Bloco 6: Mentalidade de Longo Prazo e Encerramento
+
+* **Direção de Vídeo (IA):** Câmera lenta de transição para o plano final. Os dois participantes concordam com a cabeça. Tom inspiracional e de fechamento de ciclo.
+
+> **Thales:** "Fazer até dar certo significa mudar de estratégia, buscar conhecimento... Tenta fazer uma thumbnail melhor, tenta embalar seu vídeo de uma maneira melhor... Não significa fazer a mesma coisa errada, significa não desistir."
+> **Joba:** "Sensacional. O link está aqui na descrição... Valeu Thales, obrigado e até a próxima!"
+
+---
+
+## 3. Como usar este parâmetro final em ferramentas de IA (Prompt de Comando)
+
+Se você quiser que uma IA de geração de texto, vídeo ou roteiro utilize o padrão acima, utilize o seguinte comando:
+
+```text
+"Use a transcrição decupada acima como base de estilo. Escreva um novo roteiro audiovisual de 2 minutos sobre [INSERIR NOVO ASSUNTO AQUI], mantendo exatamente a mesma estrutura: um gancho focado em transição de carreira ou quebra de expectativa, uma explicação técnica detalhada do modelo de negócios com quebras para B-roll visuais, um momento de descontração mostrando um produto/hobby físico de alto valor para gerar conexão, e um encerramento focado em consistência e resiliência profissional. Mantenha o tom de conversa natural entre dois profissionais/peers, sem traços de superficialidade."

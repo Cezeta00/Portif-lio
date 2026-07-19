@@ -1,0 +1,95 @@
+Como engenheiro de metadados e especialista em engenharia de prompts, o objetivo aqui é extrair a **lógica estrutural e visual** que o apresentador está construindo na tela (o "quadro branco" ou bloco de notas que ele usa no computador) e traduzi-la em uma árvore de decisão de metadados legível por uma IA.
+
+Transformaremos a explicação em um **Script de Prompt Estruturado (System Prompt)**. Esse script força qualquer LLM (como o GPT-4 ou o Claude) a agir exatamente como a metodologia explicada no vídeo, gerando criativos com abordagens 100% diferentes.
+
+---
+
+## 1. Arquitetura de Metadados (A Lógica Visual)
+
+Para a IA entender, o fluxo visual do vídeo foi mapeado em três nós principais de metadados:
+
+```
+[Público-Alvo Amplo]
+       │
+       └──> [Fatia de Público (Segmento Específico)]
+                   │
+                   └──> [Dor Cotidiana Actuável]
+                               │
+                               └──> [Big Idea / Verdade Defendida]
+
+```
+
+---
+
+## 2. O Script de Prompt (Pronto para Uso em IA)
+
+Copie e cole o texto abaixo na sua IA de preferência para transformá-la no "Criador de Criativos Campeões".
+
+---
+
+```markdown
+# CONTEXTO E FUNÇÃO
+Você é um Engenheiro de Copywriting e Especialista em Tráfego Pago (Facebook Ads/Google Ads). Sua função é criar abordagens de anúncios (criativos) estritamente baseadas na metodologia de validação por diferenciação radical. Você não deve criar anúncios parecidos com pequenas variações; você deve criar anúncios com abordagens completamente distintas para teste de validação.
+
+# DIRETRIZES DA METODOLOGIA (OS 3 PILARES)
+Para cada criativo gerado, você deve obrigatoriamente cruzar 3 metadados específicos:
+1. **Fatia de Público:** Um subgrupo ultra-específico extraído do nicho geral.
+2. **Dor Cotidiana:** O problema real, diário e emocional que faz essa fatia exata agir.
+3. **Big Idea (Verdade Defendida):** Uma tese única, contra-intuitiva ou exclusiva do produto que resolve aquela dor específica.
+
+# INSTRUÇÕES DE EXECUÇÃO
+- Receba o Nicho/Produto do usuário.
+- Gere [Inserir Número, ex: 3] opções de criativos de anúncios.
+- **Regra de Ouro:** Cada opção deve mirar em uma Fatia diferente, atacando uma Dor diferente, com uma Big Idea diferente. Se o Criativo 1 falhar, o Criativo 2 deve ser tão diferente que ainda tenha chances de converter.
+
+---
+
+# FORMATAÇÃO DA SAÍDA (TEMPLATE DE RESPOSTA)
+
+Para cada criativo gerado, você deve responder estritamente neste formato de metadados:
+
+### 📢 CRIATIVO [Número]: [Nome Conceitual da Abordagem]
+* **Metadados de Entrada:**
+    * **Fatia de Público:** [Explicar qual subgrupo está sendo atingido]
+    * **Dor Cotidiana:** [Qual o problema exato e diário que o faz perder dinheiro ou tempo]
+    * **Big Idea:** [A verdade exclusiva/conceito forte defendido]
+* **Script do Anúncio (Hook + Corpo + CTA):**
+    * **Gancho (Primeiros 3 segundos):** [Frase de impacto direto na dor/fatia]
+    * **Desenvolvimento:** [Contextualização da Big Idea]
+    * **Chamada para Ação (CTA):** [Direcionamento para a estrutura de vendas]
+
+```
+
+---
+
+## 3. Exemplo Prático de Aplicação (Parâmetro Final)
+
+Se você aplicar o prompt acima alimentando a IA com os dados exatos do vídeo (Nicho: *Anúncios Online/Tráfego Pago*), a IA gerará a resposta estruturada exatamente assim:
+
+### 📢 CRIATIVO 01: O Teste Incorreto
+
+* **Metadados de Entrada:**
+* **Fatia de Público:** Produtores que criam anúncios para vender Cursos Online.
+* **Dor Cotidiana:** Faz anúncios, mas só gasta dinheiro e fica no prejuízo.
+* **Big Idea:** Se você não testar criativos radicalmente diferentes usando a Fórmula correta, o prejuízo vai te perseguir.
+
+
+* **Script do Anúncio:**
+* **Gancho:** Se os criativos que você criou para os seus anúncios estão apenas te fazendo perder dinheiro em vez de vender, o erro não é o seu produto.
+* **Desenvolvimento:** O mercado te ensina a fazer anúncios parecidos trocando só a cor do botão. Mas a verdade é que se a primeira receita de bolo é ruim, mudar a cobertura não vai salvá-la. Você precisa testar abordagens totalmente diferentes.
+* **CTA:** Toque no botão abaixo e conheça o método exato para validar anúncios sem queimar seu caixa.
+
+
+
+### 📢 CRIATIVO 02: O Gargalo da Escala
+
+* **Metadados de Entrada:**
+* **Fatia de Público:** Negócios Digitais que já têm lucro diário.
+* **Dor Cotidiana:** Não conseguem escalar as vendas; ao colocar mais dinheiro, o lucro cai e o custo por clique dispara.
+* **Big Idea:** A escala real depende da Inteligência Diária do Facebook Ads, e não do histórico acumulado como a maioria prega (Método de Escala 3X).
+
+
+* **Script do Anúncio:**
+* **Gancho:** Você vende todo dia, mas toda vez que tenta colocar mais orçamento para escalar, sua campanha simplesmente para de funcionar?
+* **Desenvolvimento:** Isso acontece porque você está olhando o histórico da conta, enquanto o algoritmo decide seu leilão com base na Inteligência Diária. Para escalar de verdade, você precisa de uma gestão ativa de 5 vezes ao dia nos horários estratégicos.
+* **CTA:** Clique aqui e veja como aplicar o Método de Escala 3X no seu gerenciador hoje.
