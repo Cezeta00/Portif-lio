@@ -4,76 +4,97 @@ import webvtt
 import json
 import glob
 import re
-import subprocess
+import time
+import shutil
 
-# Pasta onde estão os JSONs
-json_dir = r"C:\Users\Isaac\Estudo\AgenteDigital_IA\Modulo-00_index\json"
+# Marca o início
+inicio = time.time()
 
-# Lista todos os arquivos .json dentro da pasta
+# Caminho base
+base_dir = os.path.dirname(os.path.abspath(__file__))
+
+json_dir = os.path.join(base_dir, "AgenteDigital_IA", "Modulo-00_index", "json")
 json_files = glob.glob(os.path.join(json_dir, "*.json"))
+
+output_dir = os.path.join(base_dir, "AgenteDigital_IA", "Modulo-Automatico")
+os.makedirs(output_dir, exist_ok=True)
 
 for json_file in json_files:
     print(f"\nProcessando arquivo: {json_file}")
+    with open(json_file, "r", encoding="utf-8") as f:
+        data = json.load(f)
 
-# Pasta onde salvar as transcrições
-output_dir = r"C:\Users\Isaac\Estudo\AgenteDigital_IA\Modulo-Automatico"
-os.makedirs(output_dir, exist_ok=True)
+    for item in data:
+        url_video = item.get("url")
+        if not url_video:
+            continue
 
-# Carrega lista de links do JSON
-with open(json_file, "r", encoding="utf-8") as f:
-    data = json.load(f)
+        print(f"\nBuscando transcrição do vídeo: {url_video}")
+        idiomas = ["pt", "de", "hi", "fr","es", "en" ]
+        
+        for idioma in idiomas:
+            ydl_opts = {
+                'writeautomaticsub': True,
+                'writesubtitles': True,
+                'subtitleslangs': [idioma],
+                'skip_download': True,
+                'outtmpl': os.path.join(output_dir, '%(id)s', '%(id)s.%(lang)s.vtt'),
+                'sleep_interval': 0.2,
+                'max_sleep_interval': 0.5
+            }
 
-for item in data:
-    nome_video = item.get("titulo")
-    url_video = item.get("url")
-    if not url_video:
-        continue
+            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                try:
+                    info = ydl.extract_info(url_video, download=False)
+                    canal = info.get("uploader", "CanalDesconhecido")
+                    video_id = info.get("id")
+                    canal_limpo = re.sub(r'[\\/*?:"<>|]', "", canal)
+                    pasta_video = os.path.join(output_dir, f"{canal_limpo}_{video_id}")
+                    os.makedirs(pasta_video, exist_ok=True)
 
-    print(f"\nBuscando transcrição do vídeo: {url_video}")
+                    ydl.download([url_video])
+                    time.sleep(0.3)
+                except Exception as e:
+                    print(f"erro ao baixar o idioma {idioma}: {e}")
 
-    ydl_opts = {
-        'writeautomaticsub': True,
-        'writesubtitles': True,
-        'subtitleslangs': ['all'],
-        'skip_download': True,
-        'outtmpl': 'legenda_temporaria'
-    }
+            # Procura legendas baixadas
+            pasta_legendas = os.path.join(output_dir, video_id)
+            arquivos_vtt = glob.glob(os.path.join(pasta_legendas, "*.vtt"))
 
-    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-        try:
-            ydl.download([url_video])
-            arquivo_vtt = 'legenda_temporaria.pt.vtt'
+            if arquivos_vtt:
+                print("\n--- TRANSCRIÇÕES ENCONTRADAS ---")
+                for arquivo_vtt in arquivos_vtt:
+                    try:
+                        linhas_limpas = []
+                        for bloco in webvtt.read(arquivo_vtt):
+                            texto_bloco = bloco.text.strip().replace('\n', ' ')
+                            if texto_bloco and (not linhas_limpas or linhas_limpas[-1] != texto_bloco):
+                                linhas_limpas.append(texto_bloco)
 
-            if os.path.exists(arquivo_vtt):
-                print("\n--- TRANSCRIÇÃO ENCONTRADA ---")
+                        texto_completo = " ".join(linhas_limpas)
+                        idioma_vtt = os.path.splitext(arquivo_vtt)[0].split(".")[-1]
+                        nome_saida = os.path.join(pasta_video, f"Transcricao_{idioma_vtt}.txt")
 
-                linhas_limpas = []
-                for bloco in webvtt.read(arquivo_vtt):
-                    texto_bloco = bloco.text.strip().replace('\n', ' ')
-                    if texto_bloco and (not linhas_limpas or linhas_limpas[-1] != texto_bloco):
-                        linhas_limpas.append(texto_bloco)
+                        with open(nome_saida, "w", encoding="utf-8") as f:
+                            f.write(texto_completo)
 
-                texto_completo = " ".join(linhas_limpas)
-                
-                
-               # Sanitiza o nome do vídeo para ser usado como nome da pasta
-            nome_video_limpo = re.sub(r'[\\/*?:"<>|]', "", nome_video)
-            # Cria uma pasta específica para o vídeo
-            pasta_video = os.path.join(output_dir, nome_video_limpo)
-            os.makedirs(pasta_video, exist_ok=True)
-            # Nome fixo para o arquivo de saída
-            nome_saida = os.path.join(pasta_video, "Original.txt")
-            with open(nome_saida, "w", encoding="utf-8") as f:
-                
-                print("Não encontramos nenhuma legenda ou transcrição em português para este vídeo.")
+                    except Exception as e:
+                        print(f"Erro ao processar {arquivo_vtt}: {e}")
+                        # Marca o fim
+                        
+fim = time.time()
 
-        except Exception as e:
-            print(f"Ocorreu um erro ao processar o link: {e}")
+# Calcula o tempo total em segundos
+tempo_total = fim - inicio
+print(f"Tempo total de execução: {tempo_total:.2f} segundos")
+print(f"Tempo total de execução: {tempo_total/60:.2f} minutos")
 
-# Remove o JSON após consumo
-os.remove(json_file)
-print(f"\n[Limpeza] O arquivo '{json_file}' foi removido.")
-
-# Executar um script Python
-subprocess.run(["python", r"C:\Users\Isaac\Estudo\AgenteDigital_IA\Modulo-00_index\conversor.py"])
-print("indo para o conversor")
+# Caminha por todas as subpastas dentro de output_dir
+for pasta in os.listdir(output_dir):
+    caminho_pasta = os.path.join(output_dir, pasta)
+    if os.path.isdir(caminho_pasta):
+        arquivos = os.listdir(caminho_pasta)
+        # Verifica se todos os arquivos são .vtt
+        if all(arq.endswith(".vtt") for arq in arquivos):
+            shutil.rmtree(caminho_pasta)  # apaga a pasta inteira
+            print(f"Pasta removida: {caminho_pasta}")

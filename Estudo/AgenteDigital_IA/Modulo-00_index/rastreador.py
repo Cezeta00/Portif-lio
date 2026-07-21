@@ -3,6 +3,9 @@ import json
 import os
 import subprocess
 
+
+
+base_dir = os.path.dirname(os.path.abspath(__file__))
 url_canal = input("Qual a URL do canal? ")
 limit = int(input("Quantos vídeos deseja rastrear? "))
 opt = int(input("1) Rastear por popularidade\n2) Rastrear por data\n "))
@@ -10,7 +13,8 @@ url_canal_limpa = url_canal.split('?')[0].rstrip('/')
 url_populares = f"{url_canal_limpa}/videos?sort=p"
 canal_nome = url_canal_limpa.split('@')[-1]
 
-subpasta = r"c:\Users\Isaac\Estudo\AgenteDigital_IA\Modulo-00_index\json"
+subpasta = os.path.join(base_dir, "AgenteDigital_IA", "Modulo-00_index", "json")
+
 
 print(f"Rastreando os vídeos mais assistidos do canal: {url_canal}...")
 if(opt == 1):
@@ -73,8 +77,12 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 ]
             # Caminho completo do arquivo dentro da subpasta
     caminho_json = os.path.join(subpasta, f"{limit}videos-{canal_nome}.json")
-    with open(caminho_json, "w", encoding="utf-8") as f:json.dump(data, f, ensure_ascii=False, indent=4)
+    with open(caminho_json, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
     print(f"\nArquivo '{caminho_json}' criado com {limit} títulos e URLs.")
+    # Executar o transcritor.py usando caminho relativo
+    subprocess.run(["python", os.path.join(base_dir, "AgenteDigital_IA", "Modulo-00_index", "transcritor.py")])
+    print("passando para o transcritor")
     
 validos = []
 for video in info_dict['entries']:
@@ -102,7 +110,3 @@ with open(caminho_json, "w", encoding="utf-8") as f:
     json.dump(validos, f, ensure_ascii=False, indent=4)
 
 print(f"\nArquivo '{caminho_json}' criado com {len(validos)} títulos e URLs válidos.")
-
-# Executar um script Python
-subprocess.run(["python", r"C:\Users\Isaac\Estudo\AgenteDigital_IA\Modulo-00_index\transcritor.py"])
-print("passando para o transcritor")

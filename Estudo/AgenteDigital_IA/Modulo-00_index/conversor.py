@@ -1,8 +1,11 @@
 import os
 from fpdf import FPDF
 
-# Caminho da pasta principal onde estão seus arquivos txt
-pasta_raiz = r'C:\Users\Isaac\Estudo\AgenteDigital_IA'
+# Caminho base
+base_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Pasta raiz relativa ao projeto
+pasta_raiz = os.path.join(base_dir, "AgenteDigital_IA")
 
 # Inicializa o PDF
 pdf = FPDF()
