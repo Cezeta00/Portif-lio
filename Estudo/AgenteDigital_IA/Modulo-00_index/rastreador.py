@@ -13,7 +13,7 @@ url_canal_limpa = url_canal.split('?')[0].rstrip('/')
 url_populares = f"{url_canal_limpa}/videos?sort=p"
 canal_nome = url_canal_limpa.split('@')[-1]
 
-subpasta = os.path.join(base_dir, "AgenteDigital_IA", "Modulo-00_index", "json")
+subpasta = os.path.join(base_dir, "json")
 
 
 print(f"Rastreando os vídeos mais assistidos do canal: {url_canal}...")
@@ -80,9 +80,7 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
     with open(caminho_json, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
     print(f"\nArquivo '{caminho_json}' criado com {limit} títulos e URLs.")
-    # Executar o transcritor.py usando caminho relativo
-    subprocess.run(["python", os.path.join(base_dir, "AgenteDigital_IA", "Modulo-00_index", "transcritor.py")])
-    print("passando para o transcritor")
+    
     
 validos = []
 for video in info_dict['entries']:
@@ -110,3 +108,7 @@ with open(caminho_json, "w", encoding="utf-8") as f:
     json.dump(validos, f, ensure_ascii=False, indent=4)
 
 print(f"\nArquivo '{caminho_json}' criado com {len(validos)} títulos e URLs válidos.")
+
+# Executar o transcritor.py usando caminho relativo
+subprocess.run(["python", os.path.join(base_dir, "transcritor.py")])
+print("após o transcritor")

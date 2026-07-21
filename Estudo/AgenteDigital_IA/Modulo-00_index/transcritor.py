@@ -6,6 +6,7 @@ import glob
 import re
 import time
 import shutil
+import subprocess
 
 # Marca o início
 inicio = time.time()
@@ -13,10 +14,10 @@ inicio = time.time()
 # Caminho base
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
-json_dir = os.path.join(base_dir, "AgenteDigital_IA", "Modulo-00_index", "json")
+json_dir = os.path.join(base_dir, "json")
 json_files = glob.glob(os.path.join(json_dir, "*.json"))
 
-output_dir = os.path.join(base_dir, "AgenteDigital_IA", "Modulo-Automatico")
+output_dir = os.path.join(base_dir, "Modulo-Automatico")
 os.makedirs(output_dir, exist_ok=True)
 
 for json_file in json_files:
@@ -30,7 +31,7 @@ for json_file in json_files:
             continue
 
         print(f"\nBuscando transcrição do vídeo: {url_video}")
-        idiomas = ["pt", "de", "hi", "fr","es", "en" ]
+        idiomas = ["pt","es", "en"]
         
         for idioma in idiomas:
             ydl_opts = {
@@ -98,3 +99,7 @@ for pasta in os.listdir(output_dir):
         if all(arq.endswith(".vtt") for arq in arquivos):
             shutil.rmtree(caminho_pasta)  # apaga a pasta inteira
             print(f"Pasta removida: {caminho_pasta}")
+
+
+subprocess.run(["python", os.path.join(base_dir, "conversor.py")])
+print("apos o conversor")
